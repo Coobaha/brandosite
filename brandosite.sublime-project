@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/MrMixnz/Sites/projects/brandosite",
+      "folder_exclude_patterns": ["img-source"],
+      "file_exclude_patterns": ["*.txt"]
+		}
+	]
+}

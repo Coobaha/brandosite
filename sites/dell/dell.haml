@@ -1,0 +1,114 @@
+!!!
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+%head
+  %link{:href => "http://fonts.googleapis.com/css?family=Exo|Open+Sans:400,600|Open+Sans+Condensed:300", :rel => "stylesheet", :type => "text/css"}/
+  %meta{:charset => "utf-8"}/
+  %meta{:content => "width=device-width", :name => "viewport"}/
+  %title Rawley Speed: Web development with a fistful of pixels
+  %link{:href => "../../stylesheets/normalize.css", :rel => "stylesheet"}/
+  %link{:href => "../../stylesheets/custom.css", :rel => "stylesheet"}/
+  <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
+  %script{:src => "../../javascripts/vendor/custom.modernizr.js"}
+  <meta name="google" value="notranslate" />         
+  <script type="text/javascript" src="swfobject.js"></script>
+  <script type="text/javascript">
+  var swfVersionStr = "10.2.0";
+  var xiSwfUrlStr = "playerProductInstall.swf";
+  var flashvars = {};
+  flashvars.xmlPath="xml/contentfile.xml";
+  flashvars.imagePath="image/";
+  var params = {};
+  params.quality = "high";
+  params.bgcolor = "#009FDA";
+  params.allowscriptaccess = "sameDomain";
+  params.allowfullscreen = "true";
+  var attributes = {};
+  attributes.id = "RateTool";
+  attributes.name = "RateTool";
+  attributes.align = "middle";
+  swfobject.embedSWF("RateTool.swf", "flashContent", "930", "550", swfVersionStr, xiSwfUrlStr, flashvars, params, attributes);
+  swfobject.createCSS("#flashContent", "display:block;text-align:center;");
+  </script>
+</head>
+
+%body
+  .row
+    .large-12.columns
+      %a{:href => "../../index.html"} 
+        .row.header
+          .large-12.columns
+            .bg-logo
+              .subhead web development with a fistful of pixels
+  .row
+    .large-12.large-centered.columns.dell-section
+      #flashContent
+        %p
+          To view this page ensure that Adobe Flash Player version
+          10.2.0 or greater is installed.
+        :javascript
+          var pageHost = ((document.location.protocol == "https:") ? "https://" : "http://"); 
+          document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='" 
+                          + pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>" ); 
+          
+      
+          <noscript>
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="930" height="550" id="RateTool" >
+          <param name="movie" value="RateTool.swf" />
+          <param name="quality" value="high" />
+          <param name="bgcolor" value="#009FDA" />
+          <param name="allowScriptAccess" value="sameDomain" />
+          <param name="allowFullScreen" value="true" />
+          <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash" data="RateTool.swf" width="930" height="550" style="height:550px">
+              <param name="quality" value="high" />
+              <param name="bgcolor" value="#009FDA" />
+              <param name="allowScriptAccess" value="sameDomain" />
+              <param name="allowFullScreen" value="true" />
+          <!--<![endif]-->
+          <!--[if gte IE 6]>-->
+              <p> 
+                  Either scripts and active content are not permitted to run or Adobe Flash Player version
+                  10.2.0 or greater is not installed.
+              </p>
+          <!--<![endif]-->
+              <a href="http://www.adobe.com/go/getflashplayer">
+                  <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+              </a>
+          <!--[if !IE]>-->
+          </object>
+          <!--<![endif]-->
+      </object>
+  </noscript>                          
+
+  / Footer
+  .row.footer
+    .large-12.large-centered.columns
+      %h1.social-header Me on the Web
+      %p You can find, follow or contact me at these sites:
+      %ul.social
+        %li.icon-linkedin
+          %a{:href => "http://www.linkedin.com/in/rawleyspeed"} LinkedIn
+        %li.icon-twitter
+          %a{:href => "https://twitter.com/Mixinz"} Twitter
+        %li.icon-lastfm
+          %a{:href => "http://www.last.fm/user/Gorillawit"} Last.FM
+        %li.icon-pinterest
+          %a{:href => "http://pinterest.com/gorillawit/"} Pinterest
+        <li class='icon-mail'>
+        <a href='mailto:rspeed@brandospeed.com'>Email</a>
+        </li>
+      %p.copyright &copy;Brandospeed 2013
+
+  :javascript
+    document.write('<script src=' +
+    ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+    '.js><\/script>')
+  
+  %script{:src => "javascripts/foundation/foundation.js"}
+  %script{:src => "javascripts/foundation/foundation.alerts.js"}
+  %script{:src => "javascripts/foundation/foundation.reveal.js"}
+  :javascript
+    $(document).foundation();
+

@@ -1,0 +1,891 @@
+/*ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,fieldset,input*/
+h1,h2,h3,h4,h5,h6,pre,form,body,html,fieldset,input
+{
+margin: 0;
+padding: 0;
+}
+
+a img,:link img,:visited img 
+{
+border: none;
+}
+
+a
+{
+text-decoration: none;
+}
+
+a:hover
+{
+text-decoration: underline;
+}
+
+
+
+/* *********** General Styles and Colors *********** */
+
+body
+{
+	text-align: center;
+	width: 980px;
+	margin: 0px auto;
+	background: url('images/bg_main_rings.png') center top fixed #980020;
+}
+
+body, div, td, p
+{
+font: 12px/18px arial, sans-serif;
+color: #000;
+}
+
+.red, a
+{
+color: #cc3333;
+}
+
+.green
+{
+color: #148638;
+}
+
+.brown
+{
+color: #9f6e0e;
+}
+
+em
+{
+font: bold italic 12px/18px arial, sans-serif;
+color: #9f6e0e;
+}
+
+h1
+{
+text-align: left;
+font: bold 22px/25px 'Trebuchet MS', trebuchet, arial, sans-serif;
+text-transform: uppercase;
+color: #CC3333;
+}
+
+h2, h2 a
+{
+text-align: left;
+font: bold 15px/20px 'Trebuchet MS', trebuchet, arial, sans-serif;
+text-transform: uppercase;
+color: #148638;
+}
+
+h2 a
+{
+text-decoration: underline;
+}
+
+h3
+{
+text-align:left;
+font: bold italic 13px/18px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #9f6e0e;
+}
+
+h6
+{
+display: block;
+text-align: left;
+font: 10px/13px arial, sans-serif;
+color: #000;
+margin: 0px;
+padding: 0px;
+}
+
+div.hr
+{
+display: block;
+height: 6px;
+margin: 10px 0px;
+padding: 0px;
+border: 0px none;
+width: 600px;
+}
+
+div.hr hr
+{
+display: none;
+}
+
+
+/* *********** Header Container *********** */
+
+#main
+{
+text-align: left;
+margin: 0px auto;
+}
+
+#header{
+text-align: left;
+width: 980px;
+height: 116px;
+background: url('images/lotz_bg_home_header_nav.png') no-repeat;
+}
+
+
+/* *********** Main Navbar Styles *********** */
+
+#mainNavigation
+{
+float: left;
+width: 620px;
+height: 22px;
+}
+
+ul.site_navigation
+{
+margin: 0;
+padding: 0;
+}
+
+ul.site_navigation li
+{
+display: inline;
+list-style: none;
+float: left;
+margin: 0px 20px;
+padding: 0;
+}
+
+ul.site_navigation li a
+{
+display: block;
+float: left;
+}
+  
+ul.site_navigation a.cms_page_navigation, ul.site_navigation a.cms_page_navigation:link, ul.site_navigation a.cms_page_navigation:visited
+{
+	font: bold 12px/20px 'Trebuchet MS', trebuchet, arial, sans-serif;
+	color: #000000;
+	text-decoration: none;
+}
+
+ul.site_navigation a.cms_page_navigation:hover, ul.site_navigation a.cms_page_navigation.nav:active
+{
+	color: #980020;
+	text-decoration: none;
+}
+
+ul.site_navigation li.current a.cms_page_navigation
+{
+color: #980020;
+text-decoration: none;
+}
+
+/* *********** HomePage Content Containers *********** */
+.home_content{
+	margin-bottom: 5px
+}
+
+.home_hero{
+	position: relative;
+	left: 34px;
+	float:left;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.home_catering{
+	float: left; 
+	margin-left: 13px;
+	cursor: pointer;
+}
+
+.home_gift{
+	float: left; 
+	margin: -5px 0 0 20px;
+	cursor: pointer;
+}
+
+.home_fran{
+	float: left; 
+	margin: -1px 0 0 10px; 
+	cursor: pointer;
+}
+
+.box {
+    clear: left;
+    overflow: hidden;
+    /*width: 560px;*/
+    /*padding: 10px;*/
+}
+
+
+.innerbox {
+	float: left;
+	margin: 0 auto;
+	}
+
+.subcontentbox2 {
+	float: left; 
+	margin: 0 auto; 
+	background: black;
+}
+
+#noflash
+{
+padding: 0px;
+margin: 0px;
+color: #fff;
+visibility: hidden;
+display: none;
+}
+
+/* *********** SubPage Content Containers *********** */
+
+#sub_content_top
+{
+text-align: left;
+clear: both;
+width: 980px;
+height: 73px;
+background: url('images/lotz_bg_sub_content_top.png') no-repeat transparent;
+}
+
+#sub_content_container
+{
+text-align: left;
+width: 980px;
+background: url('images/lotz_bg_sub_content.png') repeat-y transparent;
+min-height: 452px;
+margin-bottom:6px;
+}
+
+#sub_content
+{
+text-align: left;
+margin-left: 255px;
+width: 600px;
+min-height: 600px;
+}
+
+#sub_content ul.sf_admin_actions li
+{
+padding: 0px;
+margin: 0px;
+}
+
+#sub_content ul.admin_actions li
+{
+padding: 0px;
+margin: 0px;
+}
+
+/* *********** Breadcrumb Styles *********** */
+
+ul#breadcrumb_trail
+{
+text-align: right;
+width: 620px;
+margin: 0;
+padding: 0;
+margin-top: 50px;
+float: left;
+font-size: 11px;
+}
+
+ul#breadcrumb_trail li
+{
+display: inline;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+ul#breadcrumb_trail li a
+{
+text-decoration: underline;
+font-size: 11px;
+}
+
+ul#breadcrumb_trail li.last
+{
+background: none;
+}
+
+ul#breadcrumb_trail a.cms_page_navigation
+{
+}
+
+/* *********** Left Side Sub-Navbar Styles *********** */
+
+#subNavigation
+{
+clear: both;
+float: left;
+width: 190px;
+padding-left: 40px;
+}
+
+ul.sub_navigation
+{
+margin: 0;
+padding: 0;
+}
+
+ul.sub_navigation li
+{
+display: inline;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+
+ul.sub_navigation a
+{
+display: block;
+margin-bottom: 5px;
+width: 130px;
+padding: 2px 22px 5px 10px;
+}
+
+ul.sub_navigation a.cms_sub_navigation, ul.sub_navigation a.cms_sub_navigation:link, ul.sub_navigation a.cms_sub_navigation:visited
+{
+font: bold 12px/18px 'Trebuchet MS', trebuchet, arial, sans-serif;
+text-decoration: underline;
+color: #fff;
+}
+
+ul.sub_navigation a.cms_sub_navigation:hover, ul.sub_navigation a.cms_sub_navigation:active
+{
+font: bold 12px/18px 'Trebuchet MS', trebuchet, arial, sans-serif;
+text-decoration: underline;
+color: #A00909;
+background-color: #fff;
+}
+
+ul.sub_navigation a.cms_sub_navigation_current
+{
+margin: 7px 0px;
+font: bold 12px/20px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #A00909;
+background-color: #fff;
+text-decoration: none;
+}
+
+/* deep subnav */
+
+ul.sub_navigation a.cms_sub_navigation_deep, ul.sub_navigation a.cms_sub_navigation_deep:link, ul.sub_navigation a.cms_sub_navigation_deep:visited
+{
+display: block;
+width: 130px;
+padding: 3px 0px 5px 20px;
+font: 11px/15px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #333;
+width: 110px;
+text-decoration: underline;
+background: url('images/bg_left_nav_hilite.gif');
+}
+
+ul.sub_navigation a.cms_sub_navigation_deep:hover, ul.sub_navigation a.cms_sub_navigation_deep:active
+{
+display: block;
+width: 130px;
+padding: 3px 0px 5px 20px;
+font: 11px/15px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #333;
+width: 110px;
+text-decoration: underline;
+background: url('images/bg_left_nav_over.gif');
+}
+
+ul.sub_navigation a.cms_sub_navigation_current_deep
+{
+display: block;
+width: 130px;
+padding: 3px 0px 5px 20px;
+font: 11px/15px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #333;
+width: 110px;
+color: #9f6e0e;
+text-decoration: none;
+font-weight: bold;
+background: url('images/bg_left_nav_over.gif');
+text-align: left;
+border: 0px none;
+}
+
+/* Sitemap styles */
+
+#sitemap
+{
+margin: 0;
+padding: 0;
+}
+
+#sitemap li
+{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+#sitemap li a.main, #sitemap li a.main:link, #sitemap li a.main:visited
+{
+font: bold 13px/20px 'Trebuchet MS', trebuchet, arial, sans-serif;
+display: block;
+text-decoration: none;
+margin-top: 8px;
+width: 200px;
+}
+
+#sitemap li a.main:hover, #sitemap li a.main:active
+{
+color: #ffcc66;
+text-decoration: none;
+}
+
+#sitemap ul.sub_navigation a
+{
+padding: 5px 20px;
+background: none;
+width: 200px;
+}
+
+/* *********** Footer Styles *********** */
+
+#footer
+{
+text-align: left;
+width: 980px;
+height: 65px;
+background: url('images/lotz_bg_home_footer_nav.png') no-repeat;
+}
+
+#footer #notice
+{
+float: left;
+width: 400px;
+margin-top: 10px;
+padding-left: 70px;
+}
+
+ul.footer_navigation
+{
+float: left;
+width: 430px;
+margin: 0;
+padding: 0;
+margin-top: 10px;
+text-align: right;
+}
+
+ul.footer_navigation li
+{
+display: inline;
+list-style: none;
+margin: 0;
+padding: 0;
+margin-right: 10px;
+}
+
+ul.footer_navigation li.last
+{
+background: none;
+margin-right: 0px;
+}
+
+ul.footer_navigation a.cms_footer_navigation
+{
+	color: #000;
+	text-decoration: none;
+}
+
+ul.footer_navigation a.cms_footer_navigation:hover
+{
+color: #000;
+text-decoration: underline;
+}
+
+/* Microsite Styles */
+
+#microsite_header{
+text-align: left;
+width: 980px;
+height: 126px;
+background: url('images/bg_microsite_header_nav.gif') no-repeat;
+}
+
+#welcome
+{
+float: left;
+text-align: center;
+white-space: nowrap;
+width: 650px;
+height: 30px;
+padding-top: 74px;
+font: bold 22px/30px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #fff;
+}
+
+#welcome a, #welcome a:visited
+{
+font: bold 22px/30px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #fff;
+text-decoration: none;
+}
+
+#microsite_sub_content_container
+{
+text-align: left;
+width: 980px;
+background: #000 url('images/bg_microsite_sub_content.gif') repeat-y;
+min-height: 452px;
+}
+
+#microsite_sub_content
+{
+text-align: left;
+padding-top: 40px;
+margin-left: 240px;
+margin-right: 260px;
+}
+
+#microsite_sub_content li
+{
+/*padding-left: 16px;*/
+}
+
+#microsite_sub_content hr, #sub_sidebar hr, hr.microsite
+{
+display: block;
+height: 1px;
+margin: 15px 0px;
+padding: 0px;
+border: 0px none;
+background: #333;
+}
+
+#sub_sidebar
+{
+text-align: left;
+float: right;
+width: 180px;
+padding-right: 60px;
+padding-top: 40px;
+}
+
+#sub_sidebar a
+{
+color: #148638;
+text-decoration: underline;
+}
+
+#sub_sidebar h2, #sub_sidebar h2 a
+{
+font: bold 14px/20px 'Trebuchet MS', trebuchet, arial, sans-serif;
+}
+
+#microsite_leftnav
+{
+clear: both;
+float: left;
+width: 240px;
+background: url('images/bg_microsite_sub_content_top.gif') no-repeat;
+}
+
+#microsite_subNavigation
+{
+padding-left: 60px;
+padding-top: 10px;
+}
+
+ul.microsite_sub_navigation
+{
+margin: 0;
+padding: 0;
+}
+
+ul.microsite_sub_navigation li
+{
+display: inline;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+ul.microsite_sub_navigation a.sub_navigation, ul.microsite_sub_navigation a.sub_navigation:link, ul.microsite_sub_navigation a.sub_navigation:visited
+{
+display: block;
+width: 140px;
+padding: 10px;
+font: bold 13px/20px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #333;
+text-decoration: underline;
+}
+
+ul.microsite_sub_navigation a.sub_navigation:hover, ul.microsite_sub_navigation a.sub_navigation:active
+{
+color: #9f6e0e;
+background: url('images/bg_left_nav_over.gif');
+text-decoration: underline;
+}
+
+ul.microsite_sub_navigation a.sub_navigation_current
+{
+display: block;
+width: 140px;
+padding: 10px;
+font: bold 13px/20px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #148638;
+text-decoration: none;
+background: #fff;
+}
+
+/* microsite deep subnav */
+
+ul.microsite_sub_navigation a.sub_navigation_deep, ul.microsite_sub_navigation a.sub_navigation_deep:link, ul.microsite_sub_navigation a.sub_navigation_deep:visited
+{
+display: block;
+width: 130px;
+padding: 3px 0px 5px 20px;
+font: 11px/15px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #333;
+width: 110px;
+text-decoration: underline;
+}
+
+ul.microsite_sub_navigation a.sub_navigation_deep:hover, ul.microsite_sub_navigation a.sub_navigation_deep:active
+{
+display: block;
+width: 130px;
+padding: 3px 0px 5px 20px;
+font: 11px/15px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #9f6e0e;
+width: 110px;
+text-decoration: underline;
+}
+
+ul.microsite_sub_navigation a.sub_navigation_current_deep
+{
+display: block;
+width: 130px;
+padding: 3px 0px 5px 20px;
+font: 11px/15px 'Trebuchet MS', trebuchet, arial, sans-serif;
+color: #333;
+width: 110px;
+color: #148638;
+text-decoration: none;
+font-weight: bold;
+background: url('images/bg_left_nav_over.gif');
+text-align: left;
+border: 0px none;
+}
+
+/* (food) MENU STYLES */
+
+ul.menu_anchors
+{
+margin: 0;
+padding: 0;
+margin-bottom: 15px;
+text-align: center;
+}
+
+ul.menu_anchors li
+{
+display: inline;
+list-style: none;
+margin: 0;
+padding: 0;
+margin-right: 10px;
+}
+
+ul.menu_anchors li a
+{
+white-space: nowrap;
+}
+
+.menu_group
+{
+
+}
+
+.menu_group h2
+{
+margin: 0px;
+padding: 0px;
+font: bold 18px/25px 'Trebuchet MS', trebuchet, arial, sans-serif;
+text-transform: uppercase;
+color: #148638;
+}
+
+.menu_group_img
+{
+float: right;
+}
+
+.menu_group_footer
+{
+text-align: right;
+}
+
+ul.menu_items
+{
+padding: 0;
+margin: 10px 0;
+list-style-type: none;
+}
+
+ul.menu_items li
+{
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin-top: 10px;
+}
+
+hr.menu_item_divider
+{
+border: 0px none;
+background: #999;
+height: 1px;
+display: block;
+margin: 10px 0px;
+padding: 0px;
+}
+
+.menu_item_label
+{
+font-size: 13px;
+font-weight: bold;
+color: #9f6e0e;
+margin-top: 10px;
+}
+
+.menu_item_label a, .menu_item_label a:hover
+{
+font-size: 13px;
+font-weight: bold;
+color: #9f6e0e;
+}
+
+.menu_item_desc
+{
+font-size: 11px;
+margin-left: 20px;
+}
+
+.menu_item_aller
+{
+font-weight: bold;
+font-size: 11px;
+margin-left: 20px;
+color: #999;
+}
+
+.menu_item_optional
+{
+font-size: 11px;
+margin-left: 20px;
+color: #148638; 
+}
+
+ul.menu_item_sizes
+{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+text-align: left;
+}
+
+ul.menu_item_sizes li
+{
+list-style-type: none;
+display: inline;
+padding: 0px 0px 0px 3px;
+margin: 0px 17px;
+color: #148638;
+}
+
+
+
+/* Find Form Styles */
+
+#findus
+{
+float: left;
+text-align: right;
+width: 620px;
+height: 55px;
+color: #fff;
+font: bold 14px/20px 'Trebuchet MS', trebuchet, arial, sans-serif;
+margin: 28px 0px 0px 0px;
+padding: 0px;
+}
+
+#findus .find_btn
+{
+margin: 0px 5px;
+vertical-align: middle;
+}
+
+#findus #findus_hdr
+{
+vertical-align: middle;
+}
+
+#findus .find_box
+{
+width: 85px;
+background: #eec;
+border: 1px inset #cc6;
+height: 16px;
+font-size: 15px;
+font-weight: bold;
+text-align: center;
+margin: 0px 5px;
+color: #663;
+vertical-align: middle;
+}
+
+/* locations search (find us) styles */
+
+.search_header
+{
+margin-top: 20px;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+.search_num
+{
+background-color: #33aa00;
+color: #000;
+border: 1px solid #000;
+padding: 2px;
+}
+
+.search_result
+{
+border-top: 1px solid #999;
+}
+
+.search_location
+{
+font-size: 11px;
+margin-left: 20px;
+color: #666; 
+}
+
+#sub_content ul.search_extras
+{
+margin: 0;
+padding: 0;
+margin-top: 5px;
+}
+
+#sub_content ul.search_extras li
+{
+list-style: none;
+display: inline;
+margin: 0;
+padding: 0;
+}

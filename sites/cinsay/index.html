@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cinsay</title>
+    <link href='http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css' rel='stylesheet' />
+    <script src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
+    <script src='http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js'></script>
+    <meta content='yes' name='apple-mobile-web-app-capable' />
+    <link href='css/screen.css' rel='stylesheet' type='text/css' />
+    <meta content='width=device-width, initial-scale=1' name='viewport' />
+    <style>
+    body{
+      overflow-x: false
+    }
+    </style>
+  </head>
+  <body data-theme='a'>
+
+  <!-- Home -->
+    <div data-role='page' data-tap-toggle='false' data-theme='a' id='home'>
+      <div class='viewer'>
+        <div class='slider' style='margin:0px auto; text-align: center'>
+          <video height='160' controls autoplay="true" poster='images/videoDummy.png' width='100%'>
+            <source src='images/vid.mp4'/>
+          </video>
+        </div>
+      </div>
+      <div data-role='content'>
+        <ul data-role='listview'>
+          <li class='homePrice' data-icon='false'>
+            <a href='#productDetails' data-transition='fade'>
+              <img src='images/prod1.png' />
+              <h3>Cinsay Rules</h3>
+              <div class='ui-li-aside'>$39.99</div>
+            </a>
+          </li>
+          <li class='homePrice' data-icon='false'>
+            <a href='#productDetails' data-transition='fade'>
+              <img src='images/prod2.png' />
+              <h3>Cinsay Rules</h3>
+              <div class='ui-li-aside'>$39.99</div>
+            </a>
+          </li>
+          <li class='homePrice' data-icon='false'>
+            <a href='#productDetails' data-transition='fade'>
+              <img src='images/prod4.png' />
+              <h3>Cinsay Rules</h3>
+              <div class='ui-li-aside'>$39.99</div>
+            </a>
+          </li>
+          <li class='homePrice' data-icon='false'>
+            <a href='#productDetails' data-transition='fade'>
+              <img src='images/prod5.png' />
+              <h3>Cinsay Rules</h3>
+              <div class='ui-li-aside'>$39.99</div>
+            </a>
+          </li>
+          <li class='homePrice' data-icon='false'>
+            <a href='#productDetails' data-transition='fade'>
+              <img src='images/prod6.png' />
+              <h3>Cinsay Rules</h3>
+              <div class='ui-li-aside'>$39.99</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div data-position='fixed' data-role='footer' data-tap-toggle='false' data-theme='a' id='player-footer'>
+        <div data-role='footer' id='cartBtn'>
+          <div class='totalHome'>Items in Cart: 5</div>
+          <a data-icon='arrow-r' data-iconpos='right' href='#cart' data-transition='fade'>
+            <img src='images/cartIcon.png' />
+          </a>
+        </div>
+        <nav data-role='navbar'>
+          <ul data-theme='a'>
+            <li>
+              <a data-icon='prevIcon' data-transition='fade'></a>
+            </li>
+            <li>
+              <a data-icon='shareIcon' href='#share' data-transition='fade'></a>
+            </li>
+            <li>
+              <a data-icon='likeIcon' href='#likes' data-transition='fade'></a>
+            </li>
+            <li>
+              <a data-icon='loginIcon' href='#login' data-transition='fade'></a>
+            </li>
+            <li>
+              <a data-icon='cinsayIcon' href='http://www.cinsay.com' data-transition='fade'></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+  <!-- Product Details -->
+    <div data-role="page" id='productDetails' data-tap-toggle='false' data-theme='a'>
+      <div data-position='fixed' data-role='header' data-tap-toggle='false'>
+        <a class='ui-btn-left ui-btn ui-btn-up-a ui-shadow ui-btn-icon-notext' data-ajax='false' 
+        data-corners='false' data-icon='backIcon' data-iconpos='notext' data-iconshadow='true' data-shadow='true' 
+        data-theme='a' data-wrapperels='span' href='#home' title='Cinsay' data-transition='fade'>
+          <span class='ui-btn-inner'>
+            <span class='ui-icon ui-icon-backIcon ui-icon-shadow'></span>
+          </span>
+        </a>
+        <h1>Product</h1>
+      </div>
+      <div data-role='content'>
+        <div class='callOutBox' style="margin: 20px 0; padding: 15px 5px 0 15px">
+          <div class='ui-grid-a'>
+            <div class='ui-block-a productImageContainer'>
+              <img class='productImage' src='images/img1.jpg' />
+            </div>
+            <div class='ui-block-b'>
+              <h3 class='productDetailsTitle' style="font-weight: normal">Purchase this adorable kitten</h3>
+              <h4 class='productDetailPrice'>$439.89</h4>
+            </div>
+              <p id='prodInfoEcom' style="line-height:1.5em; margin-bottom: 28px">Lorem ipsum tempor reprehenderit sit ad labore aliqua 
+          in Lorem ipsum elit amet eu proident nostrud cupidatat voluptate magna dolor ad veniam culpa eu consequat ea nostrud.</p>
+
+          </div>
+        </div>
+        <a data-ajax='false' data-icon='plus' data-iconpos='right' data-mini='true' data-role='button' data-shadow='false' data-theme='d' href='#cart' style="margin-bottom:20px" data-transition='fade'>Add to Cart</a>
+      </div>
+    </div>
+
+
+
+ <!-- Cart View -->
+    <div data-role='page' data-tap-toggle='false' data-theme='a' id='cart'>
+     <div data-position='fixed' data-role='header' data-tap-toggle='false'>
+      <a data-ajax='false' data-icon='backIcon' data-iconpos='notext' href='#productDetails' data-transition='fade'></a>
+      <h1>Payment</h1>
+      <a data-ajax='false' data-icon='homeIcon' data-iconpos='notext' href='#home' data-transition='fade'></a>
+    </div>
+      <div data-role='content'>
+        <ul class='cart-summary' data-role='listview'>
+          <li data-icon='delete'>
+            <a href='#login' data-transition='fade'>
+              <h3>Some Product Here</h3>
+              <p>$73.00</p>
+              <span class='ui-li-aside'>
+                <input id='number-pattern' name='number' pattern='[0-9]*' placeholder='1' type='number' value='' />
+                <a data-icon='delete' data-theme='a' href='#'></a>
+              </span>
+            </a>
+          </li>
+          <li data-icon='delete' style='margin-bottom:2px'>
+            <a href='#' data-transition='fade'>
+              <h3>Some Product Here</h3>
+              <p>$73.00</p>
+              <span class='ui-li-aside'>
+                <input id='number-pattern' name='number' pattern='[0-9]*' placeholder='1' type='number' value='' />
+                <a data-icon='delete' data-theme='a' href='#' data-transition='fade'></a>
+              </span>
+            </a>
+          </li>
+          <li class='inCart ui-li ui-li-divider ui-bar-c ui-li-has-count' data-role='list-divider'>
+            <h3 class='ui-li-heading'>Items in Cart</h3>
+            <span class='ui-li-count ui-btn-up-c ui-btn-corner-all'>20</span>
+          </li>
+          <li class='inCart ui-li ui-li-divider ui-bar-c ui-li-has-count' data-role='list-divider'>
+            <h3 class='ui-li-heading'>Tax</h3>
+            <span class='ui-li-count ui-btn-up-c ui-btn-corner-all' data-mini='true'>$2.00</span>
+          </li>
+          <li class='inCart ui-li ui-li-divider ui-bar-c ui-li-has-count' data-role='list-divider' id='totalItems'>
+            <h3 class='ui-li-heading'>Total</h3>
+            <span class='ui-li-count ui-btn-up-c ui-btn-corner-all' data-mini='true'>$80.00</span>
+          </li>
+        </ul>
+        <br>
+          <br/>
+          <div data-mini='true' data-role='controlgroup' data-type='horizontal'>
+            <a data-icon='refreshIcon' data-iconpos='notext' data-role='button' href='' style='padding:5px' data-transition='fade'></a>
+            <a data-icon='arrow-r' data-iconpos='notext' data-role='button' href='#login' style='padding:5px' data-transition='fade'></a>
+          </div>
+        <br/>
+      </div>
+    </div>
+
+
+<!-- Login -->
+  <div data-role='page' data-tap-toggle='false' data-theme='a' id='login'>
+    <div data-position='fixed' data-role='header' data-tap-toggle='false'>
+      <a data-ajax='false' data-icon='backIcon' data-iconpos='notext' href='#cart' data-transition='fade'></a>
+      <h1>E-Commerce</h1>
+      <a data-ajax='false' data-icon='homeIcon' data-iconpos='notext' href='#home' data-transition='fade'></a>
+    </div>
+    <!-- Begin Content -->
+    <div data-role='content'>
+      <!-- Begin First Login Box -->
+      <form>
+          <div class='callOutBox' style='padding: 5px 5px 5px 8px;
+          position: absolute; right: 14px; top: 75px; text-align:center'>
+              <p style="margin-top:0px; padding-right:5px; display: inline">Sign in<br/>
+                <a data-ajax='false' href='#memberLogin' style='padding-right: 5px; position: relative; top: 5px; '>
+                  <img src='images/cinsayLogin.png' data-transition='fade'>
+                </a>
+                <a href='#' style='position: relative; top: 5px; padding-left:0px;'>
+                  <img src='images/fbLogin.png' data-transition='fade'></a></p>
+            </div>
+          <br><br/>
+          <h2 style='text-align: left; font-size:20px; padding-left:3px'>Create an Account</h2>
+          <p>
+            <input id='email' name='email' placeholder='username' type='text'>
+          </p>
+          <p>
+            <input id='password' name='password' placeholder='password' type='password'>
+          </p>
+          <p style="margin-bottom:30px">
+            <input id='passwordConf' name='passwordConf' placeholder='confirm password' type='password'>
+          </p>
+          <p style="font-size:12px">
+            <span>&nbsp; You must agree to the Cinsay</span><span>&nbsp;</span><a href="#" style="color:grey">Terms of Service</a></p>
+            <input id="remember" name="remember" style="background: #fff;" type="checkbox">
+            <label class="ui-btn ui-btn-corner-all ui-btn-icon-left ui-checkbox-off ui-btn-up-a" data-theme="a" data-wrapperels="span" data-corners="true" data-icon="checkbox-off" data-iconshadow="true" data-shadow="false" for="remember" style="background-color: grey; margin-bottom:20px" value="I Agree">I Agree</label>
+                   <a data-role="button" data-theme='c' data-mini="true" href="#info" data-transition='fade'>Sign Up</a>
+
+      </form>
+    </div>
+  </div>
+
+
+
+<!-- Member Login -->
+    <div data-role='page' data-theme='a' id='memberLogin' data-tap-toggle='false'>
+      <div data-position='fixed' data-role='header' data-tap-toggle='false'>
+        <a data-ajax='false' data-icon='backIcon' data-iconpos='notext' href='#login' data-transition='fade'></a>
+        <h1>E-Commerce</h1>
+        <a data-ajax='false' data-icon='cartIcon' data-iconpos='notext' href='#home' data-transition='fade'></a>
+      </div>
+      <!-- Begin Content -->
+      <div data-role='content'>
+        <form>
+          <div class='inset'>
+            <h2 style='text-align: left; font-size:18px'>Cinsay Login</h2>
+            <p>
+              <input id='email' name='email' placeholder='username' type='text' />
+            </p>
+            <p>
+              <input id='password' name='password' placeholder='password' type='password' />
+            </p>
+            <br clear='all' />
+            <a data-ajax='false' data-role='button' data-theme='d' href='#info' name='go' type='submit' data-mini="true" value='Login' data-transition='fade'>Login</a>
+            <br />
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+<!-- Guest Info -->
+    <div data-role='page' data-tap-toggle='false' data-theme='a' id='info'>
+      <div data-position='fixed' data-role='header' data-tap-toggle='false'>
+        <a data-ajax='false' data-direction='reverse' data-icon='backIcon' data-iconpos='notext' data-transition='fade' href='#login' data-transition='fade'></a>
+        <h1>E-Commerce</h1>
+        <a data-icon='cartIcon' data-iconpos='notext' data-transition='fade' href='#cart'></a>
+        <!-- Begin Content -->
+      </div>
+      <div data-role='content' role='main'>
+        <div class='container'>
+          <!-- Begin First Login Box -->
+          <h2 style='margin:10px 0 0 0'>Welcome to Cinsay</h2>
+          <p style="padding:0 0 10px 0; margin-top: 5px; font-size:14px; color: lightgrey">Please fill in the following information</p>
+          <form>
+            <div data-role='collapsible-set'>
+              <div data-collapsed='true' data-role='collapsible'>
+                <h3>Shipping Address</h3>
+                <input data-mini='true' data-theme='a' id='radio-choice-1' name='radio-choice' type='checkbox' value='choice-1'>
+                <label data-mini='true' data-theme='a' for='radio-choice-1'>Also use for billing?</label>
+                <p>
+                  <input id='firstname' name='firstname' placeholder='first name' type='text' value=''>
+                </p>
+                <p>
+                  <input id='lastname' name='lastname' placeholder='last name' type='text' value=''>
+                </p>
+                <p>
+                  <input id='address' name='address' placeholder='address' type='text' value=''>
+                </p>
+                <p>
+                  <select data-corners='true' id='city' name='city' style='white-space:nowrap; text-align:left'>
+                    <option value='State'>City</option>
+                    <option value='Reno'>Reno</option>
+                    <option value='Atlantic City'>Atlantic Ctiy</option>
+                    <option value='Las Vegas'>Vegas</option>
+                  </select>
+                </p>
+                <p>
+                  <select data-corners='true' id='state' name='state' placeholder='State' style='text-align:left' type='text' value=''>
+                    <option value='WA'>Washington</option>
+                    <option value='DL'>Delaware</option>
+                    <option value='NH'>New Hampshire</option>
+                    <option value='SA'>Sascachawan</option>
+                  </select>
+                </p>
+                <p>
+                  <input id='zip' name='zip' placeholder='Zip' type='text' value=''>
+                </p>
+              </div>
+              <div data-role='collapsible'>
+                <h3>Billing Address</h3>
+                <p>
+                  <input id='firstname' name='firstname' placeholder='first name' type='text' value=''>
+                </p>
+                <p>
+                  <input id='lastname' name='lastname' placeholder='last name' type='text' value=''>
+                </p>
+                <p>
+                  <input id='address' name='address' placeholder='address' type='text' value=''>
+                </p>
+                <p>
+                  <select data-corners='true' id='city' name='city' style='white-space:nowrap; background: lightgrey; text-align:left'>
+                    <option value='State'>City</option>
+                    <option value='Reno'>Reno</option>
+                    <option value='Atlantic City'>Atlantic Ctiy</option>
+                    <option value='Las Vegas'>Vegas</option>
+                  </select>
+                </p>
+                <p>
+                  <select data-corners='true' id='state' name='state' placeholder='State' style='background-color: grey; text-align:left' type='text' value=''>
+                    <option value='WA'>Washington</option>
+                    <option value='DL'>Delaware</option>
+                    <option value='NH'>New Hampshire</option>
+                    <option value='SA'>Sascachawan</option>
+                  </select>
+                </p>
+                <p>
+                  <input id='zip' name='zip' placeholder='Zip' type='text' value=''>
+                </p>
+              </div>
+            </div>
+          </form>
+          <a class='userInfo_button' data-mini="true" data-role='button' data-theme='d' data-transition='fade' href='#payment' style='margin: 25px 0 20px 0'>Submit</a>
+        </div>
+      </div>
+    </div>
+
+<!-- Payment -->
+   <div data-role='page' data-tap-toggle='false' data-theme='a' id='payment'>
+      <div data-position='fixed' data-role='header' data-tap-toggle='false'>
+        <a data-direction='reverse' data-icon='backIcon' data-iconpos='notext' data-transition='fade' href='#shipOps'>Back</a>
+        <h1>Cinsay</h1>
+        <a data-icon='cartIcon' data-iconpos='notext' data-transition='fade' href='#cart'>Home</a>
+      </div>
+      <div data-role='content'>
+        <h2>Payment Summary</h2>
+        <ul data-role='listview'>
+          <li data-icon='false'>
+            <a data-shadow='false' data-transition='fade'>
+              <h3>Some Product Here</h3>
+              <span class='ui-li-aside quantity'>x 1</span>
+              <span class='ui-li-aside amount'>$350</span>
+            </a>
+          </li>
+          <li data-icon='false'>
+            <a data-shadow='false' href='#productPage' data-transition='fade'>
+              <h3>Some Product Here</h3>
+              <span class='ui-li-aside quantity'>x 2</span>
+              <span class='ui-li-aside amount'>$350</span>
+            </a>
+          </li>
+          <li class='taxes' data-icon='false' data-role='divider' data-theme='d'>
+            <a data-shadow='false' href='#productPage' data-transition='fade'>
+              <h3 class='tax'>Tax</h3>
+              <span class='ui-li-aside tax'>$350</span>
+            </a>
+          </li>
+          <li class='total_price' data-icon='false' data-role='divider' data-theme='d'>
+            <a data-shadow='false' href='#productPage' data-transition='fade'>
+              <h3 class='total_price'>Total</h3>
+              <span class='ui-li-aside'>$900</span>
+            </a>
+          </li>
+        </ul>
+        <h3 class='payment_info'>Payment Information</h3>
+        <img class='payment_types' src='images/payment_types.png'>
+        <p>
+          <input id='ccNum' name='ccNum' placeholder='Card Holder' type='text'>
+        </p>
+        <p>
+          <input id='ccNum' name='ccNum' placeholder='Card Number' type='text'>
+        </p>
+        <p>
+          <select data-corners='false' id='select-choice-month' name='select-choice-month'>
+            <option>Month</option>
+            <option value='Jan'>Jan</option>
+            <option value='Feb'>Feb</option>
+            <option value='Mar'>Mar</option>
+            <option value='Apr'>Apr</option>
+            <option value='May'>May</option>
+            <option value='Jun'>Jun</option>
+            <option value='Jul'>Jul</option>
+            <option value='Aug'>Aug</option>
+            <option value='Sep'>Sep</option>
+            <option value='Oct'>Oct</option>
+            <option value='Nov'>Nov</option>
+            <option value='Dec'>Dec</option>
+          </select>
+        </p>
+        <p>
+          <select data-corners='false' id='select-choice-day' name='select-choice-day'>
+            <option>Day</option>
+            <option value='Jan'>Jan</option>
+            <option value='Feb'>Feb</option>
+            <option value='Mar'>Mar</option>
+          </select>
+        </p>
+        <p>
+          <input id='cvc' name='cvc' placeholder='cvc' type='text'>
+        </p>
+        <p style="line-height: 1.5em">
+          Lorem ipsum magna ullamco elit dolore dolor dolore incididunt pariatur Ut dolor fugiat sint proident anim aliquip aliqua consectetur tempor in labore in sint reprehenderit est irure Ut nostrud anim tempor aliqua veniam irure ad voluptate ad.
+        </p>
+        <div class='ui-checkbox' style='background-image:none'>
+          <input id='remember' name='remember' type='checkbox'>
+          <label data-corners='false' data-icon='checkbox-off' data-iconshadow='true' data-mini='true' data-shadow='false' for='remember' style='border-radius: 5px; background: #27292C; font-style: lighter; padding: 5px 0'>I agreee to the Terms Of Service</label>
+        </div>
+        <a href="#thanks" data-transition='fade' style="padding: 5px 0" data-role="button" data-mini="true" data-theme="c" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-shadow ui-btn-corner-all ui-mini ui-btn-up-c">Submit</a>
+        <br>
+        <br>
+      </div>
+    </div>
+
+
+<!-- Likes -->
+ <div data-role='page' data-tap-toggle='false' data-theme='a' id='#likes'>
+      <div data-position='fixed' data-role='header' data-tap-toggle='false'>
+        <a data-direction='reverse' data-icon='backIcon' data-iconpos='notext' data-transition='fade' href='#home'>Back</a>
+        <h1>Cinsay</h1>
+      </div>
+      <div data-role='content'>
+        <ul data-role="listview" data-inset="true">
+          <li data-icon="false">
+           <a href="#home" data-shadow="false">Likes<span class="ui-li-count">15</span></a>
+    </li>
+</ul>
+</div>
+</div>
+
+
+
+<!-- Share -->
+<div data-role="page" id="share" data-theme="a" data-tap-toggle='false' style="overflow-y:visible; scroll-y: false ">
+  <div data-role="header" data-position="fixed" data-tap-toggle='false'>
+    <a href="#home" data-icon="backIcon" data-iconpos="notext"  data-direction="reverse" data-transition="fade">Back</a>
+    <h1 data-role="title">Cinsay</h1><a href="#home" data-icon="homeIcon" data-iconpos="notext" data-transition="fade">Home</a>
+</div>
+<div data-role="content" style="margin:0px" data-tap-toggle='false'>
+  <h2 style="padding-left:10px">Share this Video</h2>
+<br/>
+
+<ul data-role="listview">
+  <li style="height:40px" data-icon="false">
+    <a href="#">
+      <img style="padding:5px 0 0 5px"src="images/share-google.png"/>
+      <p>Share to Google</p>
+    </a>
+</li>
+<li style="height:40px"  data-icon="false">
+  <a href="#">
+    <img style="padding:5px 0 0 5px" src="images/share-linkdin.png"/>
+    <p>Share to LinkedIn</p>
+  </a>
+</li>
+<li style="height:40px"  data-icon="false">
+  <a href="#">
+    <img style="padding:5px 0 0 5px" src="images/share-yahoo.png"/>
+    <p>Share to Yahoo</p>
+  </a>
+</li>
+<li style="height:40px"  data-icon="false">
+  <a href="#">
+    <img style="padding:5px 0 0 5px" src="images/share-myspace.png"/>
+    <p>Share to mySpace</p>
+  </a>
+</li>
+</ul>
+</div>
+</div>
+
+
+<!-- Thanks -->
+
+<div id="thanks" data-role="page" data-theme="a" data-tap-toggle='false'>
+    <div data-role="header" data-position="fixed" data-tap-toggle="false">
+      <a href="#payment" data-ajax="false" data-icon="backIcon" data-iconpos="notext" data-transition='fade'>Back</a>
+      <h1>E-Commerce</h1>
+    </div>
+    <div data-role="content">
+      <div class="inset">
+      <h2>Thank You</h2>
+      <hr/>
+      <div>
+        <p>Your for using Cinsay, you will recieve a confirmation email shortly</p>
+        <br/>
+        <a href="#home" data-ajax="false" data-mini="true" data-role="button" data-theme="c" data-icon="arrow-l" data-transition='fade'>Back to Video</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

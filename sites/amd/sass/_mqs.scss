@@ -1,0 +1,19 @@
+// http://css-tricks.com/media-queries-sass-3-2-and-codekit/
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (max-width: 1600px) { @content; }
+  }
+  @if $point == tablet {
+    @media (max-width: 1024px) { @content; }
+  }
+  @else if $point == phone {
+    @media (max-width: 767px)  { @content; }
+  }
+}
+
+.page-wrap {
+  width: 75%;
+  @include breakpoint(papa-bear) { width: 60%; }
+  @include breakpoint(mama-bear) { width: 80%; }
+  @include breakpoint(baby-bear) { width: 95%; }
+}

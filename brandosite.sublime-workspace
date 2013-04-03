@@ -1,0 +1,1276 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ba",
+				"background"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"backgro",
+				"background-position"
+			],
+			[
+				"position",
+				"background-position"
+			],
+			[
+				"bp",
+				"bgp	background-position: ${1:0} ${2:0};"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"mh",
+				"max-height"
+			],
+			[
+				"ts",
+				"tsh	text-shadow: ${1:hoff} ${2:voff} ${3:blur} ${4:#000};"
+			],
+			[
+				"color",
+				"color"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"bg",
+				"body-bg"
+			],
+			[
+				"tra",
+				"transition	CSS - transition: ;"
+			],
+			[
+				"transpa",
+				"transparent"
+			],
+			[
+				"body",
+				"body-bg"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"bra",
+				"border-radius"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"bd",
+				"bd+	border: ${1:1px} ${2:solid} ${3:#000};"
+			],
+			[
+				"bgz",
+				"bgsz-a	background-size: auto;"
+			],
+			[
+				"br",
+				"bgr-rd	background-repeat: round;"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"fw",
+				"fw-n	font-weight: normal;"
+			],
+			[
+				"ou",
+				"outline"
+			],
+			[
+				"repe",
+				"repeat-y"
+			],
+			[
+				"brp",
+				"background-repeat"
+			],
+			[
+				"bgi",
+				"bgi	background-image: url(${0});"
+			],
+			[
+				"bz",
+				"bgsz-cv	background-size: cover;"
+			],
+			[
+				"scro",
+				"scrollorama"
+			],
+			[
+				"lorem",
+				"lorem	lorem - Medium paragraph"
+			],
+			[
+				"lore",
+				"lorem	lorem - One sentence"
+			],
+			[
+				"in",
+				"inventory"
+			],
+			[
+				"cla",
+				"cla	Class"
+			],
+			[
+				"Max",
+				"MaxgoodHouse"
+			],
+			[
+				"show",
+				"showFlights"
+			],
+			[
+				"va",
+				"va:m	vertical-align:middle"
+			],
+			[
+				"fi",
+				"fidelissimae"
+			],
+			[
+				"section",
+				"section	section"
+			],
+			[
+				"ko",
+				"ko.o	knockoutjs observable"
+			],
+			[
+				"j",
+				"jquery"
+			],
+			[
+				"fore",
+				"forrex	Range comprehension (exclusive)"
+			],
+			[
+				"doct",
+				"doctype	HTML 5"
+			],
+			[
+				"img",
+				"img	img"
+			],
+			[
+				"hms",
+				"hmst	haml-style"
+			],
+			[
+				"hm",
+				"hmlk	haml-link"
+			],
+			[
+				"bx",
+				"bxsh+	box-shadow+"
+			],
+			[
+				"con",
+				"console.log();"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"mar",
+				"Marked"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"html",
+				"HTML2Haml: Convert selection"
+			],
+			[
+				"html2ham",
+				"HTML2Haml: Convert selection"
+			],
+			[
+				"swf",
+				"Snippet: Google AJAX Libraries: SWFObject"
+			],
+			[
+				"html2",
+				"HTML2Haml: Convert selection"
+			],
+			[
+				"haml",
+				"HTML2Haml: Convert selection"
+			],
+			[
+				"nex",
+				"Schemr: Nexus"
+			],
+			[
+				"schfr",
+				"Schemr: Frontier"
+			],
+			[
+				"sc",
+				"Schemr: CiapreBlack"
+			],
+			[
+				"sch",
+				"Schemr: Carbonight"
+			],
+			[
+				"sche",
+				"Schemr: Monokai"
+			],
+			[
+				"sett",
+				"Preferences: Settings - User"
+			],
+			[
+				"upp	",
+				"Snippet: CSS - text-transform: uppercase;"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"prefere",
+				"Preferences: Settings - User"
+			],
+			[
+				"cdn",
+				"Cdnjs: Import Script"
+			],
+			[
+				"html2ha",
+				"HTML2Haml: Convert selection"
+			],
+			[
+				"syntax ham",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"htm2",
+				"HTML2Haml: Convert selection"
+			],
+			[
+				"them",
+				"Themr: Nil"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"ugli",
+				"Nodejs::UglifyJS"
+			],
+			[
+				"cia",
+				"Schemr: CiapreBlack"
+			],
+			[
+				"sol",
+				"Schemr: Solarized (light)"
+			],
+			[
+				"solar",
+				"Schemr: Solarized (dark)"
+			],
+			[
+				"cooo",
+				"Schemr: Cool Glow"
+			],
+			[
+				"tronl",
+				"Schemr: TronLegacy"
+			],
+			[
+				"marke",
+				"Marked"
+			],
+			[
+				"cap",
+				"Schemr: CiapreBlack"
+			],
+			[
+				"html2h",
+				"HTML2Haml: Convert selection"
+			],
+			[
+				"fold",
+				"Code Folding: Fold All"
+			],
+			[
+				"html2haml",
+				"HTML2Haml: Convert selection"
+			],
+			[
+				"scher",
+				"Schemr: base16-railscasts.dark"
+			],
+			[
+				"next",
+				"Camaleón : Next Color Scheme and Chrome Theme"
+			],
+			[
+				"next col",
+				"Camaleón : Next Color Scheme and Chrome Theme"
+			],
+			[
+				"server",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"haml	",
+				"Snippet: haml-template"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"capr",
+				"Schemr: CiapreBlack"
+			],
+			[
+				"cool",
+				"Schemr: Cool Glow"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"lint",
+				"JSLint"
+			],
+			[
+				"show co",
+				"Coffee: Show Compiled"
+			],
+			[
+				"coffee",
+				"Coffee: Show Compiled"
+			],
+			[
+				"jsl",
+				"JSLint"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"dis",
+				"Nodejs::Default File Settings"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"coffee lin",
+				"CoffeeLint: Lint code"
+			],
+			[
+				"coffee: co",
+				"Coffee: Show Compiled"
+			],
+			[
+				"pac",
+				"Package Control: Enable Package"
+			],
+			[
+				"jquery.",
+				"Snippet: jQuery(document).ready"
+			],
+			[
+				"docu",
+				"Snippet: document.ready - $(function()"
+			],
+			[
+				"settin",
+				"Preferences: Settings - User"
+			],
+			[
+				"schem",
+				"Schemr: Ciapre"
+			],
+			[
+				"scherm",
+				"Schemr: Mellow"
+			],
+			[
+				"tro",
+				"Schemr: Tron"
+			],
+			[
+				"cobal",
+				"Schemr: Cobalt"
+			],
+			[
+				"js2",
+				"JS2Coffee: Convert & Make New File"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"emm",
+				"Emmet: Merge Lines"
+			],
+			[
+				"emme",
+				"Emmet: Merge Lines"
+			],
+			[
+				"",
+				"Themr: Ayin"
+			],
+			[
+				"themr",
+				"Themr: Reload themes"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"docty	",
+				"Snippet: DOCTYPE HTML"
+			],
+			[
+				"cdn ",
+				"Cdnjs: Import Script"
+			],
+			[
+				"lorem",
+				"Snippet: lorem - One sentence"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"gitgu",
+				"Git: Gui"
+			],
+			[
+				"gi",
+				"Git: Gitk"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pa",
+				"Composer: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"htmlti",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"snippet cons",
+				"Snippet: function-space"
+			],
+			[
+				"ja",
+				"Format: Javascript"
+			],
+			[
+				"jsformat",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"file ",
+				"File: New View into File"
+			],
+			[
+				"coffeecomm",
+				"Snippet: coffee_comment"
+			],
+			[
+				"diabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"coba",
+				"Schemr: cobalt2"
+			],
+			[
+				"cama",
+				"Camaleón : Random Colour Scheme"
+			],
+			[
+				"color",
+				"Camaleón : Next Color Scheme and Chrome Theme"
+			],
+			[
+				"colo",
+				"Camaleón : Next Color Scheme and Chrome Theme"
+			],
+			[
+				"pom",
+				"pomodoro"
+			],
+			[
+				"schem co",
+				"Schemr: Cool Code Scheme"
+			],
+			[
+				"base",
+				"Schemr: base16-tomorrow.dark"
+			],
+			[
+				"sola",
+				"Schemr: Solarized (dark)"
+			],
+			[
+				"schem ",
+				"Schemr: Reload schemes"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ma",
+				"Marked"
+			],
+			[
+				"theme",
+				"Themr: Reload themes"
+			],
+			[
+				"Theme ",
+				"Themr: Reload themes"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"the",
+				"Snippet: The Loop"
+			],
+			[
+				"m",
+				"Marked"
+			],
+			[
+				"mark",
+				"Marked"
+			],
+			[
+				"js2c",
+				"JS2Coffee: Convert & Make New File"
+			],
+			[
+				"ja	",
+				"Format: Javascript"
+			],
+			[
+				"sch co",
+				"Schemr: cobalt2"
+			],
+			[
+				"hex",
+				"Hex Viewer: Generate Hash from Selection"
+			],
+			[
+				"uk",
+				"Schemr: BoxUK"
+			],
+			[
+				"chem",
+				"Schemr: Stereokai"
+			],
+			[
+				"rando",
+				"Schemr: GrandsonOfObsidian"
+			],
+			[
+				"he",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"lorem Text",
+				"Lorem Text"
+			],
+			[
+				"lore",
+				"Lorem Text"
+			],
+			[
+				"filter",
+				"Snippet: filter (sass)"
+			],
+			[
+				"s",
+				"Schemr: mreq"
+			],
+			[
+				"sta",
+				"Schemr: Tomorrow Aqua"
+			],
+			[
+				"pomo",
+				"pomodoro"
+			],
+			[
+				"p",
+				"pomodoro"
+			],
+			[
+				"ham",
+				"Snippet: haml-template"
+			],
+			[
+				"kno",
+				"Snippet: simple knockoutjs viewModel"
+			],
+			[
+				"knockou",
+				"Snippet: knockoutjs dependent observable"
+			],
+			[
+				"co",
+				"Schemr: cobalt2"
+			],
+			[
+				"cob",
+				"Schemr: Cobalt"
+			],
+			[
+				"knock",
+				"Snippet: knockoutjs apply bindings"
+			]
+		],
+		"width": 451.0
+	},
+	"console":
+	{
+		"height": 222.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/MrMixnz/Sites/projects/brandosite/javascripts/vendor/grid.js",
+		"/Users/MrMixnz/Sites/projects/brandosite/sites/dell/dell.haml",
+		"/private/var/folders/_z/307fjdf12tz_nh9yr1r9yl3r0000gn/T/3fa9ab56-d9e5-496a-9134-30f169397260/brandospeed.com/sites/dell/dell.html",
+		"/private/var/folders/_z/307fjdf12tz_nh9yr1r9yl3r0000gn/T/3fa9ab56-d9e5-496a-9134-30f169397260/brandospeed.com/sites/amd/amd_movie.html",
+		"/private/var/folders/_z/307fjdf12tz_nh9yr1r9yl3r0000gn/T/3fa9ab56-d9e5-496a-9134-30f169397260/brandospeed.com/illustration.html",
+		"/Users/MrMixnz/Desktop/keyframes",
+		"/Users/MrMixnz/Sites/projects/brandosite/index.haml",
+		"/Users/MrMixnz/Sites/projects/brandosite/index.html",
+		"/Users/MrMixnz/Sites/projects/brandosite/stylesheets/custom.css",
+		"/Users/MrMixnz/Sites/projects/brandosite/sass/custom.scss",
+		"/private/var/folders/_z/307fjdf12tz_nh9yr1r9yl3r0000gn/T/3fa9ab56-d9e5-496a-9134-30f169397260/brandospeed.com/stylesheets/custom.css",
+		"/private/var/folders/_z/307fjdf12tz_nh9yr1r9yl3r0000gn/T/3fa9ab56-d9e5-496a-9134-30f169397260/brandospeed.com/index.html",
+		"/Users/MrMixnz/Sites/projects/brandosite/sites/shlot/index.html",
+		"/Users/MrMixnz/Downloads/icomoon52896/style.css",
+		"/Users/MrMixnz/Sites/projects/brandosite/sites/amd/amd_movie.haml",
+		"/Users/MrMixnz/Sites/projects/brandosite/sass/_settings.scss",
+		"/Users/MrMixnz/Sites/projects/brandosite/illustration.html",
+		"/Users/MrMixnz/Sites/projects/brandosite/stylesheets/style.css",
+		"/Users/MrMixnz/Sites/projects/brandosite/sites/amd/amd_movie.html",
+		"/Users/MrMixnz/Sites/projects/brandosite/ill.html",
+		"/Users/MrMixnz/Sites/projects/brandosite/stylesheets/illus.css",
+		"/Users/MrMixnz/Sites/projects/brandosite/fonts/style.css",
+		"/Users/MrMixnz/Dropbox/Workbox/ThumbnailGridExpandingPreview/sass/style.scss",
+		"/Users/MrMixnz/Sites/projects/brandosite/sass/illus.scss",
+		"/Users/MrMixnz/Sites/projects/brandosite/sass/_app.scss",
+		"/Users/MrMixnz/Dropbox/Workbox/ThumbnailGridExpandingPreview/index.html",
+		"/Users/MrMixnz/Sites/projects/brandosite/sass/_illus.scss",
+		"/Users/MrMixnz/Sites/projects/brandosite/stylesheets/_illus.css",
+		"/Users/MrMixnz/Sites/projects/brandosite/sass/app.scss",
+		"/Users/MrMixnz/Sites/projects/brandosite/sass/ill.scss",
+		"/Volumes/LILLAPPY/sites/local_brandospeed_archives/archive/coffee-app/bools.coffee",
+		"/Users/MrMixnz/Sites/projects/brandosite/ill.haml",
+		"/Users/MrMixnz/Sites/projects/brandosite/config.rb",
+		"/Users/MrMixnz/Dropbox/Workbox/codeschool/coffeescript/if_and_is_then_operators.coffee",
+		"/Users/MrMixnz/Downloads/10_modifying_effect_speed/movement_speed.coffee",
+		"/Users/MrMixnz/Dropbox/Workbox/codeschool/coffeescript/if_else.coffee",
+		"/Users/MrMixnz/Dropbox/coffeescript_lib/cs_snipz_original_tut/verify_if_a_word_exists_in_array.coffee",
+		"/Users/MrMixnz/Downloads/_commented_coffee/actions_commented.coffee",
+		"/Users/MrMixnz/Dropbox/sass_compass/sasslib copy.sass",
+		"/Users/MrMixnz/Sites/projects/brandosite/sass/_animator.sass",
+		"/Users/MrMixnz/Downloads/25 Free High Resolution Blurred Backgrounds/Useful Links! (How To).txt",
+		"/Users/MrMixnz/Documents/JOB/resume/rspeedResume copy.md",
+		"/Users/MrMixnz/Documents/JOB/resume/rspeedResume.md",
+		"/Users/MrMixnz/Sites/projects/brandosite/brandosite.sublime-project",
+		"/Users/MrMixnz/Sites/projects/brandosite/Icon",
+		"/Users/MrMixnz/Sites/projects/brandosite/sites/global/global.haml",
+		"/Users/MrMixnz/Sites/projects/brandosite/sites/dell/dell.html",
+		"/Users/MrMixnz/Sites/projects/brandosite/sites/winslows/winslows_styles.css",
+		"/Users/MrMixnz/Sites/projects/brandosite/global.haml",
+		"/Users/MrMixnz/Sites/projects/brandosite/global.html",
+		"/Users/MrMixnz/Sites/projects/brandosite/sites/winslows/index.php",
+		"/Users/MrMixnz/Library/Containers/com.bitnami.mampstack/Data/app-5_4_9/apache2/htdocs/brandospeed/index.html",
+		"/Users/MrMixnz/Sites/projects/brandosite/sites/winslows/navbar.php",
+		"/Users/MrMixnz/Sites/projects/brandosite/sites/winslows/wine.php",
+		"/Users/MrMixnz/Sites/projects/brandosite/dell.haml",
+		"/Users/MrMixnz/Sites/projects/brandosite/javascripts/foundation/foundation.reveal.js",
+		"/Users/MrMixnz/Downloads/_commented_coffee/moreactions.coffee",
+		"/Users/MrMixnz/Dropbox/Workbox/mixture_tester/mixture.json",
+		"/Users/MrMixnz/Downloads/squirrelmail-webmail-1.4.22/README",
+		"/Users/MrMixnz/Downloads/squirrelmail-webmail-1.4.22/index.php",
+		"/Users/MrMixnz/Sites/projects/demo-portfolio/sass/style.scss",
+		"/Users/MrMixnz/Sites/projects/lotz_home_6_10/lotz_home.js",
+		"/Users/MrMixnz/Sites/projects/lotz_home_6_10/promo_files/schlotzskys.js",
+		"/Users/MrMixnz/Dropbox/sass_compass/vertical_rhythm_goodExample.sass",
+		"/Users/MrMixnz/Dropbox/sass_compass/h5bp_sass_haml_orig_coffeeJQ/compass_vertical_rythm.scss",
+		"/Users/MrMixnz/Dropbox/sass_compass/sass_multiple_arguments_fontMixin/sass_multiple_arguments_fontMixin.sass",
+		"/Users/MrMixnz/Dropbox/sass_compass/sass_tips/sass/placeholder.scss",
+		"/Users/MrMixnz/Dropbox/sass_compass/touch_refs/compass_awesome_tut_touch_web2/sass/screen.sass",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_snipz_original_tut/coffeeTestOrg.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_snipz_original_tut/ada_websocket.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_snipz_original_tut/functions.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_snipz_original_tut/existential-operator.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_snipz_original_tut/doFunction.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_snipz_original_tut/destructured-assignment-arrays.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_snipz_original_tut/fizzbuzz_so_danm_readable.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_snipz_original_tut/keys.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/JAshkenas_speech_notes.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_higher_order_functions.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/objects_as_badasses.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/coffee-script.js",
+		"/Users/MrMixnz/Desktop/coffeescript/template.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/helpers.coffee",
+		"/Users/MrMixnz/Desktop/coffeescript/index.coffee",
+		"/Users/MrMixnz/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/MrMixnz/Sites/projects/brandosite/stylesheets/app.css",
+		"/Users/MrMixnz/Sites/projects/brandosite/foundation_sass_cheatsheet.scss",
+		"/Users/MrMixnz/Desktop/coffeescript/jq_examples.coffee",
+		"/Users/MrMixnz/Dropbox/sass_compass/susy_refs/susy_example/sass/screen.sass",
+		"/Users/MrMixnz/Sites/projects/brandosite/index3.haml",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_snipz_jqsite/js/add_class.js",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_snipz_jqsite/js/embedJSinCS.js",
+		"/Users/MrMixnz/Desktop/coffeescript/cs_snipz_jqsite/remove_class.coffee",
+		"/Users/MrMixnz/Dropbox/sass_compass/susy_refs/suzy_tut/sass/style.sass",
+		"/Users/MrMixnz/Desktop/awesome_stuff/blocks/sass/styles-grid.sass",
+		"/Users/MrMixnz/Desktop/awesome_stuff/inline_block/css/screen.css",
+		"/Users/MrMixnz/Desktop/awesome_stuff/inline_block/css/style.css",
+		"/Users/MrMixnz/Desktop/awesome_stuff/layouts_box_sizing_mqueriesgreat!/box-sizing/box-sizing.css",
+		"/Users/MrMixnz/Desktop/awesome_stuff/inline_block/sass/partials/_base.scss",
+		"/Users/MrMixnz/Desktop/awesome_stuff/inline_block/sass/style.sass",
+		"/Users/MrMixnz/Desktop/awesome_stuff/inline_block/sass/_fonts.sass",
+		"/Users/MrMixnz/Desktop/awesome_stuff/inline_block/sass/_base.sass",
+		"/Users/MrMixnz/Sites/projects/brandosite-attempt/config.rb",
+		"/Users/MrMixnz/Dropbox/sass_compass/susy_refs/susy_on_tuts+/sass/screen.scss",
+		"/Users/MrMixnz/Desktop/awesome_stuff/susy_compass_grid_awesome/sass/style.sass",
+		"/Users/MrMixnz/Dropbox/sass_compass/susy_refs/suzy_tut/sass/_grid.sass",
+		"/Users/MrMixnz/Sites/projects/brandosite/index3.html",
+		"/Users/MrMixnz/Sites/projects/brandosite-attempt/brando_site_source/about.haml",
+		"/Users/MrMixnz/Sites/projects/brandosite/index.html.haml",
+		"/Users/MrMixnz/Sites/projects/branddosite/index.html",
+		"/Users/MrMixnz/Sites/projects/brandosite/sass/screen.scss",
+		"/Users/MrMixnz/Sites/projects/brando_site_source/about.haml",
+		"/Users/MrMixnz/Sites/projects/brando_site_source/o-me.haml",
+		"/Users/MrMixnz/Sites/projects/brando_site_source/project.css",
+		"/Users/MrMixnz/Sites/projects/brando_site_source/index.haml",
+		"/Users/MrMixnz/Sites/projects/brando_site_source/o-me.html",
+		"/Users/MrMixnz/Sites/projects/brando_port/Gemfile",
+		"/Users/MrMixnz/Sites/projects/brando_port/source/index.html.html",
+		"/Users/MrMixnz/dotfiles/zshrc",
+		"/Users/MrMixnz/Desktop/docs_tips_resources/workflow_biz/my_terminal_aliases.md",
+		"/Users/MrMixnz/dotfiles/oh-my-zsh/README.textile",
+		"/Library/Ruby/Gems/1.8/gems/susy-1.0.5/test/scss/functions.scss",
+		"/Library/Ruby/Gems/1.8/gems/susy-1.0.5/test/scss/background.scss",
+		"/Library/Ruby/Gems/1.8/gems/susy-1.0.5/templates/project/_base.scss",
+		"/Library/Ruby/Gems/1.8/gems/susy-1.0.5/templates/project/screen.scss",
+		"/Volumes/FileSalvage/Read Me.txt",
+		"/Users/MrMixnz/Desktop/speedDial_prefs.txt",
+		"/Users/MrMixnz/Desktop/brandosite/sass/style.sass",
+		"/Users/MrMixnz/Sites/projects/brando_site/index2.html"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fonts",
+			"h3",
+			"rgba",
+			"og-",
+			"og",
+			"og-",
+			"ddd",
+			"body",
+			"og-",
+			"images",
+			"og-",
+			"images",
+			"og-",
+			".illus",
+			"og-",
+			"hover",
+			"body-bg",
+			"home",
+			"content",
+			"black",
+			"25s",
+			"cinsay",
+			"bg",
+			"anim",
+			"sites",
+			"height",
+			"2",
+			"#fff",
+			"slt",
+			"0",
+			"myModal",
+			"h4",
+			"$body-bg",
+			"</script>",
+			"$light-grey",
+			"#eee",
+			"    %footer.row\n      .large-12.columns",
+			"devices",
+			"Exo",
+			"vertical",
+			"vertica",
+			"succeed",
+			"‘Metrophobic’",
+			"CVS",
+			"Dropbox",
+			"js",
+			"../../",
+			"images",
+			" - ",
+			"border - bottom",
+			" - ",
+			"&nbsp;",
+			"nth",
+			"horizontal",
+			"Breeerif",
+			"Bevan",
+			"bgrove",
+			"sans",
+			";\n",
+			"+r",
+			"ey",
+			"h1",
+			"lifted",
+			"vid",
+			"cs",
+			"readc",
+			"showO",
+			"showOver",
+			"#",
+			"SpaceCadet",
+			"json",
+			"python",
+			"hello",
+			"nth",
+			"%li",
+			"{\"d",
+			"business",
+			"~",
+			"jQuery",
+			"took",
+			"first",
+			"means",
+			"here",
+			".i",
+			"article",
+			"this",
+			"args",
+			"   ",
+			"this",
+			"dstufft",
+			"’",
+			"===================\n",
+			"#",
+			"TodoCtrl",
+			"count",
+			"get",
+			"            \n",
+			"new",
+			"\n",
+			"cloud",
+			"Header",
+			"French",
+			"coffeePot",
+			"brew",
+			"Asleep",
+			"showNumberOfFlights",
+			"author",
+			"this",
+			"function",
+			"this",
+			"coffeeOrder",
+			"default",
+			"STACK TO USE AND WHY",
+			"white",
+			"/\n",
+			"jqw",
+			"Wayoints",
+			"Wordmark",
+			"Mixpanel",
+			"funnel",
+			"prox",
+			"JSConsole",
+			"com",
+			"/\n",
+			"HeadJS",
+			"ST2",
+			"GOOD",
+			"CAN"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 48.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CoffeeLintPanel":
+	{
+		"height": 170.0
+	},
+	"output.coffee_compile_output":
+	{
+		"height": 170.0
+	},
+	"output.coffeecompile_output":
+	{
+		"height": 326.0
+	},
+	"output.composer":
+	{
+		"height": 162.0
+	},
+	"output.exec":
+	{
+		"height": 326.0
+	},
+	"output.git":
+	{
+		"height": 288.0
+	},
+	"output.gjslint_result_view":
+	{
+		"height": 146.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 162.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 170.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"cus",
+				"stylesheets/custom.css"
+			],
+			[
+				"sett",
+				"sass/_settings.scss"
+			],
+			[
+				"style",
+				"stylesheets/style.css"
+			],
+			[
+				"styl",
+				"fonts/style.css"
+			],
+			[
+				"con",
+				"config.rb"
+			],
+			[
+				"haml",
+				"index.haml"
+			],
+			[
+				"html",
+				"global.html"
+			],
+			[
+				"css",
+				"stylesheets/custom.css"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"htm",
+				"global.html"
+			],
+			[
+				"set",
+				"sass/_settings.scss"
+			],
+			[
+				"ham",
+				"index.haml"
+			],
+			[
+				"",
+				"index3.haml"
+			],
+			[
+				"app",
+				"sass/app.scss"
+			],
+			[
+				"co",
+				"config.rb"
+			],
+			[
+				"scss",
+				"assets/css/screen.scss"
+			],
+			[
+				"ha",
+				"assets/js/hashgrid.js"
+			],
+			[
+				"index2",
+				"index2.html"
+			],
+			[
+				"t",
+				"assets/css/libs/_typography.scss"
+			],
+			[
+				"bk",
+				"index-bkup.haml"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"fon",
+				"fonts.html"
+			],
+			[
+				"todo",
+				"angular_todo.html"
+			],
+			[
+				"an",
+				"angular.html"
+			],
+			[
+				"ht",
+				"ugh.html"
+			],
+			[
+				"inde",
+				"index.haml"
+			],
+			[
+				"no",
+				"knowckout_notes.md"
+			],
+			[
+				"1",
+				"demos/1-simple-data-bind-initial.haml"
+			],
+			[
+				"int",
+				"index.html"
+			],
+			[
+				"js",
+				"codescript1.js"
+			],
+			[
+				"coffee",
+				"codescript1.coffee"
+			],
+			[
+				"sh",
+				"schedule.html"
+			],
+			[
+				"mo",
+				"app/public/js/module.js"
+			],
+			[
+				"per",
+				"app/tests/models/personTest.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true
+}

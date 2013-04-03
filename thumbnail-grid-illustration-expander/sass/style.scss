@@ -1,0 +1,333 @@
+@import "compass/reset";
+@import "compass";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+// Media querey
+@mixin small-screen {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+
+html { height: 100%; }
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    background: #f9f9f9;
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	position: relative;
+}
+
+.container > header {
+	width: 90%;
+	max-width: 1240px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 30px 50px 30px;
+}
+
+.container > header {
+	padding: 60px 30px 50px;
+	text-align: center;
+}
+
+.container > header h1 {
+	font-size: 34px;
+	line-height: 38px;
+	margin: 0 auto;
+	font-weight: 700;
+	color: #333;
+}
+
+.container > header h1 span {
+	display: block;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.main > p {
+	text-align: center;
+	padding: 50px 20px;
+}
+
+/* Header Style */
+.codrops-top {
+	line-height: 24px;
+	font-size: 11px;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.5);
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+}
+
+.codrops-top a {
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	background: rgba(255,255,255,0.8);
+	color: #000;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+
+
+
+/* THUMBNAIL GRID */
+
+.og-grid {
+	list-style: none;
+	padding: 20px 0;
+	margin: 0 auto;
+	// centering text here so that the thumbnails will center because they have a display: inline-block
+	text-align: center;
+	// grid is full width (takes up window)
+	width: 100%;
+	li {
+		// display: inline-block as mentioned above, centers thumbs
+		display: inline-block;
+		margin: 10px 5px 0 5px;
+		vertical-align: top;
+		height: 250px;
+	}
+}
+
+/* SELECTED ILLUSTRATION */
+// give a special class (og-expanded) to the respective list item
+.og-grid li.og-expanded > a::after {
+	// creating arrow as a pseudo-element to this jq anchor class
+	top: auto;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #ddd;
+	border-width: 15px;
+	left: 50%;
+	margin: -20px 0 0 -15px;
+}
+
+// The preview itself will have the class og-expander and we’ll position that element absolutely. The initial height of the preview will be 0 and we’ll set the overflow to hidden:
+/* PREVIEW CLASS */
+.og-expander {
+	position: absolute;
+	background: #ddd;
+	top: auto;
+	left: 0;
+	width: 100%;
+	margin-top: 10px;
+	text-align: left;
+	// initial height is 0 and overflow hidden
+	height: 0;
+	overflow: hidden;
+	@include small-screen {
+		h3{ font-size: 32px; }
+		p { font-size: 13px; }
+		a { font-size: 12px; }
+	}
+}
+
+// inner div has some paddings and a height of 100%.
+.og-expander-inner {
+	padding: 50px 30px;
+	height: 100%;
+}
+
+// styling for the 
+%og-close-style {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 1px;
+	background: #888;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+// two lines for an x close button
+.og-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	&::before {
+		@extend %og-close-style;
+	}
+	&::after {
+		@extend %og-close-style;
+		transform: rotate(-45deg);
+	}
+	&:hover::before, &:hover::after {
+		background: #333;
+	}
+}
+
+.og-close::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+/* IMAGE/DETAILS WRAPPER */
+%og-img-detail-styles{
+	// 50% wide and floated next to each other
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.og-fullimg{
+	@extend %og-img-detail-styles;
+	// center the image inside of the image wrapper
+	text-align: center;
+	img {
+		// center image inside container by setting display: inline-block 
+		display: inline-block;
+		// max-height and max-width of 100% (fill container)
+		max-height: 100%;
+		max-width: 100%;
+	}
+	@include small-screen {
+		// hide full image at small screen, also not load it in js
+		display: none;
+	}
+}
+
+/* DETAILS WRAPPER */
+.og-details {
+	@extend %og-img-detail-styles;
+	// wrapper padding
+	padding: 0 40px 0 20px;
+	h3{
+		font-weight: 300;
+		font-size: 52px;
+		padding: 40px 0 10px;
+		margin-bottom: 10px;
+	}
+	p {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 22px;
+		color: #999;
+	}
+	a {
+		font-weight: 700;
+		font-size: 16px;
+		color: #333;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding: 10px 20px;
+		border: 3px solid #333;
+		display: inline-block;
+		margin: 30px 0 0;
+		outline: none;
+	}
+	a::before {
+		content: '\2192';
+		display: inline-block;
+		margin-right: 10px;
+	}
+	a:hover {
+		border-color: #999;
+		color: #999;
+	}
+	@include small-screen {
+		// hide full image at small screen, also not load it in js
+		float: none; width: 100%;
+	}
+}
+
+
+/* LOADING ELEMENT */
+.og-loading {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ddd;
+	// 3 box shadows, one for circle shading, two for the animation
+	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	-webkit-animation: loader 0.5s infinite ease-in-out both;
+	-moz-animation: loader 0.5s infinite ease-in-out both;
+	animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}

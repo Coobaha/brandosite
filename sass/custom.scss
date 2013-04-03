@@ -1,0 +1,650 @@
+@import "app";
+@import "animator";
+@import url(http://fonts.googleapis.com/css?family=Exo|Open+Sans:400,600|Open+Sans+Condensed:300);
+@include establish-baseline;
+
+// Variables ------------------------------------------------
+$base-font-size: 16px;
+$base-line-height: 8px;
+$white: rgba(#FAFAFA, 1);
+$black: rgba(#030303, 1);
+
+// Mixinz/Placeholders ------------------------------------------------
+@mixin fontAttrs($fFam: 'Open Sans', $fWeight: 400, $fSize: $base-font-size, $leading: 1) {
+  font-family: $fFam, Arial, serif;
+  font-weight: $fWeight;
+  @include adjust-font-size-to($fSize, $leading);
+}
+
+@mixin letterpress($opacity, $color) {
+  text-shadow: rgba($color, ($opacity)) 0 1px 0
+}
+
+%seam {
+  clear: both;
+  display: block;
+  height: 0px;
+  border-top: 1px solid rgba($black, .2);
+  border-bottom: 1px solid rgba(white, .2);
+}
+
+
+// Begin Custom Styles ------------------------------------------------
+
+body {
+  @include fontAttrs;
+  background: url(../img/header-bg.jpg);
+  background-attachment: fixed; 
+  }
+
+h1 {
+  @include fontAttrs(Exo);
+  color: $white;
+  font-size: $base-font-size*2;
+}
+
+b{
+  @include fontAttrs($fFam:'Open Sans', $fWeight:600);
+}
+
+.header{
+  background: url(../img/logo.png) no-repeat;
+  @include background-size(17em);
+  background-repeat: no-repeat;
+  background-position: center 5em;
+  text-align: center;
+  padding: 10em 0 10em 0;
+  @media #{$small} {
+    @include background-size(auto);
+    background-position: center 4.2em;
+    padding: 15.5em 0 10em 0;
+  }
+}
+
+    
+.subhead {
+  @include fontAttrs($fFam:'Exo', $fSize: $base-font-size/1.1, $leading:1.5);
+  @include letterpress(.3, $black);
+  color: $white;
+  @media #{$small} {
+    font-size: $base-font-size*1.3;
+  }
+}
+
+.seam-row{ min-width: 100%; }
+
+.hrseam {
+  @extend %seam;
+}
+
+.about-section {
+  @include trailer(10);
+  padding: 0 auto;
+  min-width: 100%;
+  background-position: 100px 100px;
+}
+
+.about-section-row {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+%about-sections-styles {
+  text-align: center;
+  margin: 0 auto;
+  @include leader(7);
+  @include letterpress(.3, $black);
+}
+
+.about-sections {
+  @include animate(bounceInDown, 1s);
+  @extend %about-sections-styles;
+  padding: 0 20%;
+  img {
+    @extend %about-sections-styles;
+  }
+}
+
+.about-section-title {
+  @include trailer(3);
+  @include animate(fadeIn, .2s, 2s);
+  h4 {
+    @include fontAttrs('Exo',$fSize:$base-font-size*2.3,$leading:5);
+    padding: 10px 0 0 0;
+    color: $white;
+    text-transform: lowercase;
+    background: transparent;
+  }
+  p {
+    @include leader(1);
+    @include fontAttrs($leading:3);
+  }
+}
+
+// Portfolio ------------------------------------------------
+.portfolio-section {
+  min-width: 100%;
+  background-color: $white;
+}
+
+.carousel {
+  position: relative;
+}
+
+.shots-container {
+  width: 100%;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  padding: 3em 0;
+}
+
+.shots {
+  overflow: hidden;
+  margin: 0;
+  padding: 0 2%;
+  // Shot width = 300px + 20px margin + 20px padding + 2px border
+  // 342 * 4 (# of shots)
+  width: 2394px; /* 340 * 7 */
+  min-height: 210px;
+  @media #{$small} {
+  // Shot width = 400px + 20px margin + 20px padding + 2px border
+  // 442 * 4 (# of shots)
+  width: 3094px;
+  min-height: 300px;
+}
+
+li {
+  float: left;
+  width: 300px;
+  height: 180px;
+  margin: 0 10px;
+  padding: 10px;
+  background: url(loading.gif) 100px 50% no-repeat;
+  cursor: pointer;
+  @include scale(1);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease-in);
+  &:hover, :focus {
+    @include scale(1.1);
+    @include transition-property(rotate);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease-out);
+  }
+  img {
+    margin: 20px;
+    border: 1px solid #ddd;
+    @include single-box-shadow(rgba($black, .5), 0, 22px, 10px, -15px);
+    @include transform(rotate(0deg));
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease-in);
+    &:hover {
+      @include transform(rotate(1deg));
+      @include transition-duration(.2s);
+      @include transition-timing-function(ease-out);
+    }
+  }
+  @media #{$small} {
+    width: 400px;
+    height: 220px;
+  }
+}
+}
+
+// Portfolio Masks ------------------------------------------------
+.mask {
+  position: absolute;
+  top:0;
+  width: 4%;
+  height: 100%;
+}
+
+.mask-left {
+  left: 0;
+  @include background(linear-gradient(left, rgba($white,1), rgba($white,0)) );
+}
+
+.mask-right {
+  right: -1px;
+  @include background(linear-gradient(left, rgba($white,0), rgba($white,1)) );
+}
+
+
+// Footer ------------------------------------------------
+.footer {
+  text-align: center;
+  margin: 0 auto;
+  background-color: $body-bg;
+  max-width: 100%;
+  @include letterpress(.3, $black);
+  h1 {
+    @include leader(3);
+    color: $white;
+  }
+  p {
+    color: $white;
+    @include leader(2);
+    line-height: 1.3;
+  }
+  .copyright {
+    font-size: $base-font-size/1.3;
+    @include trailer(3);
+  }
+}
+
+.portfolio-content {
+  @include leader(7);
+  text-align: center;
+  h1{
+    @include letterpress(.3, $black);
+    color: $body-bg;
+  }
+  p {
+    font-size: 2em;
+  }
+}
+
+.social {
+  margin: 2em 0;
+  @include fontAttrs('Open Sans Condensed',$fSize:$base-font-size,$leading:1.5);
+  li {
+    position: relative;
+    @include inline-block();
+    margin: .5em;
+    @include transition(all .15s ease);
+    &:hover {
+      @include scale(1.25);
+      color: white;
+    }
+    &:before {
+      position: absolute;
+      width: 2em;
+      /* center align technique, give width, negative half margin */
+      margin-left: -1em;
+      top: 1.5em;
+      left: 50%;
+    }
+    a {
+      @include fontAttrs($fFam:'Open Sans Condensed', $fSize: $base-font-size*1.2);
+      display: block;
+      color: inherit;
+      padding: 2.7em 1em 1em;
+      width: 6em;
+      // allow truncation if needed
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-decoration: none;
+    }
+  }
+}
+
+
+// Icon Font ------------------------------------------------
+.icon-twitter {color: $white}
+.icon-twitter:hover {background:lighten($body-bg, 10%)}
+.icon-linkedin {color: $white}
+.icon-linkedin:hover {background: lighten($body-bg, 10%)}
+.icon-lastfm {color: $white}
+.icon-lastfm:hover {background: lighten($body-bg, 10%)}
+.icon-pinterest {color: $white}
+.icon-pinterest:hover {background: lighten($body-bg, 10%)}
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-linkedin, .icon-lastfm, .icon-twitter, .icon-pinterest, .icon-mail {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-linkedin:before {
+  content: "\e000";
+}
+.icon-lastfm:before {
+  content: "\e001";
+}
+.icon-twitter:before {
+  content: "\e004";
+}
+.icon-pinterest:before {
+  content: "\e005";
+}
+.icon-mail:before {
+  content: "\e002";
+}
+
+
+// Modal Styles ------------------------------------------------
+.reveal-modal {
+  h2 {
+    @include fontAttrs('Exo',$fSize:$base-font-size*1.3, $leading: 3);
+    @include leader;
+    @include trailer(1);
+    color: $body-bg;
+    @media #{$small} {
+      @include leader(1);
+    }
+  }
+  p {
+  @include fontAttrs('Open Sans',$fSize:$base-font-size/1.1,$leading:2.3);
+  color: #666;
+  }
+  a {
+    @include padding-leader(1);
+    display: inline-block;
+    line-height: 1.5;
+    text-decoration: none;
+    color: darken($body-bg, 10%);
+  }
+  img {
+    @include single-box-shadow(rgba($black, .5), 0, 22px, 10px, -15px);
+  }
+}
+
+// Flash Sections ------------------------------------------------
+
+.dell-section {
+  text-align: center;
+  background-color: #009FDA;
+  height: 550px;
+}
+
+.amd-section {
+  @include leader(3);
+  text-align: center;
+  height: 325px;
+  @include trailer(3);
+}
+
+
+.illus {
+  font-weight: 300;
+  font-size: 15px;
+  color: #fff;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+a {
+  color: #555;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.container > header {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 30px 50px 30px;
+}
+
+.container > header {
+  padding: 60px 30px 50px;
+  text-align: center;
+}
+
+.container > header h1 {
+  font-size: 34px;
+  line-height: 38px;
+  margin: 0 auto;
+  font-weight: 700;
+  color: #333;
+}
+
+.container > header h1 span {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.main > p {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+
+/* THUMBNAIL GRID */
+.illus-grid {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.illus-grid li {
+  display: inline-block;
+  margin: 10px 5px 0 5px;
+  vertical-align: top;
+  height: 250px;
+}
+
+/* SELECTED ILLUSTRATION */
+.illus-grid li.illus-expanded > a::after {
+  top: auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: rgba(0, 159, 218, .3);
+  border-width: 15px;
+  left: 50%;
+  margin: -20px 0 0 -15px;
+}
+
+/* PREVIEW CLASS */
+.illus-expander {
+  position: absolute;
+  background: rgba(0, 159, 218, .3);
+  top: auto;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+}
+@media only screen and (max-width: 767px) {
+  .illus-expander h3 {
+    font-size: 32px;
+  }
+  .illus-expander p {
+    font-size: 13px;
+  }
+  .illus-expander a {
+    font-size: 12px;
+  }
+}
+
+.illus-expander-inner {
+  padding: 50px 30px;
+  height: 100%;
+}
+
+.illus-close::before, .illus-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.illus-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.illus-close::after {
+  transform: rotate(-45deg);
+}
+.illus-close:hover::before, .illus-close:hover::after {
+  background: #aaa;
+}
+
+.illus-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* IMAGE/DETAILS WRAPPER */
+.illus-fullimg, .illus-details {
+  width: 50%;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.illus-fullimg {
+  text-align: center;
+}
+.illus-fullimg img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+    -webkit-box-shadow: 0 22px 10px -15px rgba(3, 3, 3, 0.5);
+  -moz-box-shadow: 0 22px 10px -15px rgba(3, 3, 3, 0.5);
+  box-shadow: 0 22px 10px -15px rgba(3, 3, 3, 0.5);
+}
+@media only screen and (max-width: 767px) {
+  .illus-fullimg {
+    display: none;
+  }
+}
+
+/* DETAILS WRAPPER */
+.illus-details {
+  padding: 0 40px 0 20px;
+}
+.illus-details h3 {
+  color: #fff;
+  font-family: 'Exo';
+  line-height: 1.3;
+  font-size: 52px;
+  padding: 40px 0 10px;
+  margin-bottom: 10px;
+}
+.illus-details p {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #eee;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .illus-details {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* LOADING ELEMENT */
+.illus-loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #cccccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  -webkit-animation: loader 0.5s infinite ease-in-out both;
+  -moz-animation: loader 0.5s infinite ease-in-out both;
+  animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+  }
+
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+  }
+}
+
+@-moz-keyframes loader {
+  0% {
+    background: #ddd;
+  }
+
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+  }
+
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+  }
+}
+
+@keyframes loader {
+  0% {
+    background: #ddd;
+  }
+
+  33% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #cccccc, -15px 30px 1px #dddddd;
+  }
+
+  66% {
+    background: #ccc;
+    box-shadow: 0 0 1px #cccccc, 15px 30px 1px #dddddd, -15px 30px 1px #cccccc;
+  }
+}

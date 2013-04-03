@@ -1,0 +1,13 @@
+$midline-clr: #111116;
+$secondary-shading: #4E547B;
+$circle-face-clr: #3D4055;
+$container-subhead-clr: #1A1B21;
+$container-border-clr: #A4A6B5;
+
+@function black($opacity){
+  @return rgba(0,0,0,$opacity);
+}
+
+@function white($opacity){
+  @return rgba(255,255,255,$opacity);
+}

@@ -1,0 +1,281 @@
+/**************************************************
+@TODO
+When the page is resized, the dotted border lines begin to creep in on the circle. add a media query to deal with that
+media query for global month navigation
+***************************************************/
+@import "compass/reset";
+@import "compass";
+@import "_logic";
+// $midline-clr: #111116;
+// $secondary-shading: #4E547B;
+// $circle-face-clr: #3D4055;
+// $container-subhead-clr: #1A1B21;
+// $container-border-clr: #A4A6B5;
+
+
+body {
+  background: url(../img/p5.png);
+  font-family: 'Inder', sans-serif;
+  font-size: 15px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+h1 {
+  font-size: 24px;
+  position:relative;
+  font-weight: 400;
+  padding: 30px 5px 10px 5px;
+  margin: 0px 15px;
+  color: rgba(153,157,181,0.6);
+  text-shadow: 0px 1px 1px #fff;
+  border-bottom: 1px solid rgba(17,17,22,0.1);
+}
+
+h2.ss-subtitle {
+    padding: 10px 10px 40px;
+    font-size: 52px;
+    color: rgba(black(1),.8);
+    position: relative;
+    text-shadow: 1px 1px 2px rgba(black(1),.2);
+    &:before{
+      width: 4px;
+      height: 40px;
+      background: rgba($midline-clr,0.8);
+      content: '';
+      position: absolute;
+      right: 75%;
+      margin-right: -4px;
+      bottom: -4px;
+      border-radius: 2px 2px 0px 0px;
+    }
+    &:after {
+      width: 25%;
+      height: 0px;
+      border-bottom: 4px dotted rgba($midline-clr,0.8);
+      content: '';
+      position: absolute;
+      right: 50%;
+      margin-right: -1px;
+      bottom: -4px;
+    }
+  }
+
+// month global nav
+.ss-links{
+  position: fixed;
+  left: 10px;
+  top: 175px;
+  width: 25%;
+  z-index: 100;
+  a {
+    background: rgba(black(1),0.2);
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    float: left;
+    border-radius: 10%;
+    display: block;
+    text-align: center;
+    @include single-transition(background, 0.2s, linear);
+    &:hover{
+      background: rgba(black(1),0.4);
+    }
+  }
+}
+
+
+.ss-container{
+  width: 100%;
+  position: relative;
+  text-align: left;
+  float: left;
+  // prevent scollbar from appearing
+  overflow: hidden;
+  padding-bottom: 500px;
+  &:before{
+    // the middle vertical time'line'
+    position: absolute;
+    width: 4px;
+    background: rgba($midline-clr,0.8);
+    top: 0px;
+    left: 50%;
+    margin-left: -2px;
+    content: '';
+    height: 100%;
+  }
+  // heading styles
+  h2{
+    font-size: 40px;
+    color: rgba(26, 27, 33, 0.6);
+    text-shadow: 0px 1px 1px white(1);
+    padding: 20px 0px;
+  }
+  h3 {
+    margin-top: 34px;
+    padding: 10px 15px 20px 15px;
+    background: rgba(#1A1B21, 0.6);
+    text-shadow: 1px 1px 1px rgba(#1A1B21, 0.8);
+    line-height: 2.5em;
+  }
+}
+
+
+// the row serves as the wrapper for the left and right elements
+.ss-row{
+    width: 100%;
+    clear: both;
+    float: left;
+    position: relative;
+    padding: 30px 0;
+}
+
+%ss-sides-styles{
+  // left and right elements will occupy half of the width:
+  float: left;
+  width: 48%;
+  position: relative;
+}
+
+.ss-right {
+  @extend %ss-sides-styles;
+  padding-left: 2%;
+}
+
+.ss-left {
+  @extend %ss-sides-styles;
+  text-align: right;
+  float: left;
+  padding-right: 2%;
+}
+
+
+// circle with box shadows
+// three different sized circles. Depending on which side it's on, they will be floated either left or right:
+.ss-circle{
+  border-radius: 2%;
+  overflow: hidden;
+  display: block;
+  text-indent: -9000px;
+  text-align: left;
+  @include box-shadow(black(.7) 0px 2px 5px inset, rgba($circle-face-clr, .4) 0px 0 0 12px);
+  background-size: cover;
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: static;
+  .ss-small & {
+    width: 100px;
+    height: 100px;
+  }
+  .ss-medium &{
+    width: 200px;
+    height: 200px;
+  }
+  .ss-large &{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+// Arrow created by the border style, depending on if it’s a child of the left or right side, set the according border and position:
+.ss-circle-deco:before{
+  width: 29%;
+  height: 0px;
+  border-bottom: 5px dotted #ddd;
+  border-bottom: 5px dotted rgba($secondary-shading, 0.3);
+  @include box-shadow(white(1) 0px 1px 1px);
+  position: absolute;
+  top: 50%;
+  content: '';
+  margin-top: -3px;
+  .ss-left &{
+    right: 2%;
+  }
+  .ss-right &{
+    left: 2%;
+  }
+}
+.ss-circle-deco:after{
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  .ss-left & {
+    right: 0;
+    border-right: 10px solid rgba($midline-clr,0.8);
+  }
+  .ss-right & {
+    left: 0;
+    border-left: 10px solid rgba($midline-clr,0.8);
+  }
+}
+
+
+.ss-left .ss-circle{
+    float: right;
+    margin-right: 30%;
+}
+.ss-right .ss-circle{
+    float: left;
+    margin-left: 30%;
+}
+
+
+// Because of the different circle sizes, need to adjust the position of the headings on the other side. they must be at the height of the arrow, so set the margins differently (the one for ss-small is already set in the circle itself)
+.ss-container { 
+  .ss-medium h3{
+    margin-top: 82px;
+  }
+  .ss-large h3{
+    margin-top: 133px;
+  }
+  .ss-left h3{
+    border-right: 5px solid rgba($container-border-clr,0.8);
+  }
+  .ss-right h3{
+    border-left: 5px solid rgba($container-border-clr,0.8);
+  }
+  // The style for the description:
+  h3 {
+    span {
+      color: white(.8);
+      font-size: 13px;
+      display: block;
+      padding-bottom: 5px;
+    }
+    a {
+      font-size: 28px;
+      color: white(.9);
+      display: block;
+      &:hover{
+        color: white(1);
+      }
+    }
+  }
+}
+
+// background images for the circles
+
+$circles: ss-circle !default;
+
+@for $i from 1 through 30 {
+  .#{$circles}-#{$i} {
+    background-image: url(../img/#{$i}.jpg);
+  }
+}

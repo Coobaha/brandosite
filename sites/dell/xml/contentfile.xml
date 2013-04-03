@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+
+<phoneName
+id="s7"
+src="streak7.jpg" 
+btnSrc1="tmobileIcon.png"
+buySrc1="tmobileIcon.png"
+btnSrc2="wifiIcon.png"
+logoTM="logo_Tmobile.jpg"
+shop="Shop Streak 7">
+<![CDATA[Streak 7]]>
+</phoneName>
+
+
+<phoneName
+id="venue"
+src="venue.jpg"
+logoATT="logo_ATT.gif"
+logoUL="unlocked_large.jpg"
+btnSrc1="attIcon.png"
+btnSrc2="unlockedIcon.png"
+shop="Shop Venue">
+<![CDATA[Venue]]>
+</phoneName>
+
+
+<phoneName
+id="venuePro"
+src="venuePro.jpg"
+logoUL="unlocked_large.jpg"
+logoTM="logo_Tmobile.jpg" 
+logoATT="logo_ATT.gif"
+btnSrc1="attIcon.png" 
+btnSrc2="tmobileIcon.png" 
+btnSrc3="unlockedIcon.png"
+shop="Shop Venue Pro"
+shopLeft="-7">
+<![CDATA[Venue Pro]]>
+</phoneName>
+
+<phoneName id="LP"
+src="laptop.jpg"
+btnSrc1="attIcon.png"
+btnSrc2="tmobileIcon.png"
+btnSrc3="verizonIcon.png"
+btnSrc4="sprintIcon.png"
+logoATT="logo_ATT.gif"
+logoTM="logo_Tmobile.jpg" 
+logoVZ="logo_verizon.jpg"
+logoS="logo_sprint.jpg"
+shop="Shop Laptops">
+<![CDATA[3G/4G Laptops]]>
+</phoneName>
+
+
+
+
+<!--AT&T*********************************************************-->
+
+<!--AT&T FAMILY PHONE PLAN***************************************************-->
+		<plan id="attFam" logo="logo_ATT.gif" 
+		calLink="http://www.att.com/datacalculator"
+		buyLink="http://www.dell.com/us/p/mobile-venue/pd?~ck=mn" 
+		buyLinkVP="http://www.dell.com/us/p/mobile-venue-pro/pd?~ck=mn">
+			<intro>
+				<titleCopy><![CDATA[AT&T, The Nation's Fastest Mobile Broadband Network]]></titleCopy>
+				<planName><![CDATA[Family Plans]]></planName>
+				<dataIntro><![CDATA[AT&T FamilyTalk® plans offer a range of calling plan options that let you share minutes and save.
+• Unlimited calling on Nights and Weekends for all lines for most plans
+• Unlimited calling to other AT&T wireless customers with Mobile to Mobile while in the U.S.
+• No roaming or long distance charges in the U.S.
+• Saving unused minutes with Rollover®]]></dataIntro>
+<calText calColor="#0085c3"><![CDATA[Access the AT&T Data Calculator to estimate your data usage.]]></calText>
+			</intro>
+			<planGraph x="25" y="130">
+				<barHeader><![CDATA[AT&T FamilyTalk®]]></barHeader>
+				<barNumber1><![CDATA[ 700]]></barNumber1>
+				<barSub1><![CDATA[ w/ Rollover® Minutes]]></barSub1>
+				<barNumber2><![CDATA[ 1400]]></barNumber2>
+				<barSub2><![CDATA[ w/ Rollover® Minutes]]></barSub2>
+				<barNumber3 ><![CDATA[Unlimited]]></barNumber3>
+				<barColor text="0x0085c3" gap="20" width="150" sGrad="0x007fbb" eGrad="0x091F2A"/>
+				<bar1 height="150" bul1="700 Anytime minutes" bul2="Unlimited Night &amp; Weekend minutes" dollars="69" cents="99" />
+				<bar2 height="220" bul1="1400 Anytime minutes" bul2="Unlimited Night &amp; Weekend minutes" dollars="89" cents="99" />
+				<bar3 height="300" bul1="Unlimited Anytime minutes" bul2="Unlimited Night &amp; Weekend minutes" dollars="119" cents="99" />
+			</planGraph>
+			<terms link="http://www.att.com/termsofservice"><![CDATA[View the AT&T Customer Agreement here.]]></terms>
+			
+<!--ATT FAM PLAN MESSAGE/DATA GRID-->
+			<grid>
+				<planGroup id="messPlans">
+					<plan>
+						<planTitle>Messaging 1000</planTitle>
+						<perMonth>1000</perMonth>
+						<fee>20</fee>
+					</plan>
+					<plan>
+						<planTitle><![CDATA[Family Messaging Unlimited with Mobile to Any Mobile Calling]]></planTitle>
+						<perMonth>Unlimited</perMonth>
+						<fee>30</fee>
+					</plan>
+				</planGroup>
+
+				<planGroup id="dataPlans">
+					<plan>
+						<planTitle>Data Plus 200 MB</planTitle>
+						<perMonth>200 MB</perMonth>
+						<fee>15</fee>
+					</plan>
+					<plan>
+						<planTitle>DataPro 2GB</planTitle>
+						<perMonth>2GB</perMonth>
+						<fee>25</fee>
+					</plan>
+				</planGroup>
+			</grid>
+
+
+<!--ATT FAMILY BAR PLANS -->
+			<details>
+				<am700 header="Anytime Minutes 700" infoHeader="Rate Plan Details"
+					dis="*Unlimited weekday minutes from 9pm to 6am and unlimited minutes on weekends.">
+					<feature><![CDATA[Night & Weekend* minutes Unlimited]]></feature>
+					<feature><![CDATA[Mobile to Mobile minutes Unlimited to other AT&T wireless customers while in the U.S.]]></feature>
+					<feature>Long Distance $0.00 while in the U.S.</feature>
+					<feature>Roaming Charges $0.00 while in the U.S.</feature>
+					<feature>Additional minutes $.45 per minute</feature>
+					<feature>Primary line one-time activation fee $36.00 per new line (max 5 lines)</feature>
+					<feature>Contract length 2 years</feature>
+				</am700>
+				<am700inc header="Included Features:">
+					<feature>Call Forwarding</feature>
+					<feature>Caller ID</feature>
+					<feature>Call Waiting</feature>
+					<feature>Basic Voice Mail</feature>
+					<feature>Conference Calling</feature>
+				</am700inc>
+
+				<am1400 header="Anytime Minutes 1400" infoHeader="Rate Plan Details">
+					<feature>Night &amp; Weekend* minutes Unlimited</feature>
+					<feature>Mobile to Mobile minutes Unlimited to other AT&amp;T wireless customers while in the U.S.</feature>
+					<feature>Long Distance $0.00 while in the U.S.</feature>
+					<feature>Roaming Charges $0.00 while in the U.S.</feature>
+					<feature>Additional minutes $.40 per minute</feature>
+					<feature>One-time activation fee $36.00 per new line (max 5 lines)</feature>
+					<feature>Contract length 2 years</feature>
+				</am1400>
+				<am1400inc header="Included Features:">
+					<feature>Call Forwarding</feature>
+					<feature>Caller ID</feature>
+					<feature>Call Waiting</feature>
+					<feature>Basic Voice Mail</feature>
+					<feature>Conference Calling</feature>
+				</am1400inc>
+
+				<uam header="Anytime Minutes Unlimited" infoHeader="Rate Plan Details">
+					<feature><![CDATA[Night & Weekend* minutes Unlimited]]></feature>
+					<feature><![CDATA[Mobile to Mobile minutes Unlimited to other AT&T wireless customers while in the U.S.]]></feature>
+					<feature>Long Distance $0.00 while in the U.S.</feature>
+					<feature>Roaming Charges $0.00 while in the U.S.</feature>
+					<feature>Additional minutes $.00 per minute</feature>
+					<feature>One-time activation fee $36.00 per new line (max 5 lines)</feature>
+					<feature>Contract length 2 years</feature>
+				</uam>
+				
+				<uaminc header="Included Features:">
+					<feature>Call Forwarding</feature>
+					<feature>Caller ID</feature>
+					<feature>Call Waiting</feature>
+					<feature>Basic Voice Mail</feature>
+					<feature>Conference Calling</feature>
+				</uaminc>
+
+<!--ATT FAMILY GRID PLANS -->
+				<m1000 header="Messaging 1000" infoHeader="Rate Plan Details"
+					dis="Prices are billed monthly and are valid for use in the U.S. only. Charges for international messages sent from the U.S. are $0.25 for Text Messages and $0.50 for Picture/Video Messages. Charges for usage while roaming internationally: $0.50 for each text message sent, $1.30 for each picture/video message sent, and $0.0195 for each kilobyte used. Standard rates apply to all incoming messages. Additional charges for premium messages and content apply. For full details on Messaging &amp; Data Bundles, go to att.com/mediaterms. Domestic Pay-Per-Use Charges: Text/Instant Messaging $0.20 per message; Picture/Video Messages $0.30 per message.">
+					<feature>1000 Messages per month</feature>
+					<feature>Monthly cost: $10</feature>
+					<feature>Overage fee: $0.10 per message</feature>
+					<feature>For a low monthly fee, Messaging 1000 gives you 1000 text, picture, video, and Instant Messaging messages per month.
+					</feature>
+				</m1000>
+				<m1000txt header="Text Messaging">
+					<feature>Fast, fun, to-the-point communication</feature>
+					<feature>Just type the message, pick a wireless phone number, and send.</feature>
+				</m1000txt>
+				<m1000pic header="Picture and Video Messaging">
+					<feature>Share a smile, a cute moment, or that thing you just have to buy.</feature>
+					<feature>Snap the photo or video with your camera phone, pick a mobile phone or email address, and send.</feature>
+					<feature>Call Waiting</feature>
+					<feature>Basic Voice Mail</feature>
+					<feature>Conference Calling</feature></m1000pic>
+				<m1000inst header="Instant Messaging">
+					<feature>Instant Messaging</feature>
+					<feature>Chat real-time with IM on your phone</feature>
+					<feature>Use AOL® Instant Messenger, Yahoo!®, and Windows Live Messenger®</feature>
+				</m1000inst>
+
+				<famMess header="Family Messaging" infoHeader="Rate Plan Details"
+					dis="Prices are billed monthly and are valid for use in the U.S. only. Charges for international messages sent from the U.S. are $0.25 for Text Messages and $0.50 for Picture/Video Messages. Charges for usage while roaming internationally: $0.50 for each text message sent, $1.30 for each picture/video message sent, and $0.0195 for each kilobyte used. Standard rates apply to all incoming messages. Additional charges for premium messages and content apply. For full details on Messaging &amp; Data Bundles, go to att.com/mediaterms. Domestic Pay-Per-Use Charges: Text/Instant Messaging $0.20 per message; Picture/Video Messages $0.30 per message.">
+					<feature><![CDATA[Unlimited Calling and Messaging to or from any Mobile in the U.S., Puerto Rico, or U.S.V.I. Messaging Unlimited includes domestic Text, Picture, Video and Instant Messaging.]]></feature>
+					<feature><![CDATA[Monthly cost: $20]]></feature>
+					<feature><![CDATA[Overage fee: none]]></feature>
+				</famMess>
+				<famMessTxt header="Text Messaging">
+					<feature><![CDATA[Private, to-the-point communication.]]></feature>
+					<feature><![CDATA[Just type the message, pick a wireless phone number, and send.]]></feature>
+				</famMessTxt>
+				<famMessPic header="Picture and Video Messaging">
+					<feature><![CDATA[Share a smile, a cute moment, or that thing you just have to buy.]]></feature>
+					<feature><![CDATA[Snap the photo or video with your camera phone, pick a mobile phone or email address, and send.]]></feature>
+					<feature><![CDATA[Call Waiting]]></feature>
+					<feature><![CDATA[Basic Voice Mail]]></feature>
+					<feature><![CDATA[Conference Calling]]></feature>
+				</famMessPic>
+				<famMessInst header="Instant Messaging">
+					<feature><![CDATA[Instant Messaging]]></feature>
+					<feature><![CDATA[Chat real-time with IM on your phone]]></feature>
+					<feature><![CDATA[Use AOL® Instant Messenger, Yahoo!®, and Windows Live Messenger®]]></feature>
+				</famMessInst>
+				
+<!--ATT FAMILY ADDITIONAL OPTIONS -->
+				<option header="Additional Options">
+				<item>
+				<feature><![CDATA[AT&T Family Map: Locate up to 2 people]]></feature>
+				<price><![CDATA[$9.99]]></price>
+				<info><![CDATA[Sign up and get your first 30 days free*!
+Give your children independence and yourself peace of mind with AT&T FamilyMap.  Track your child's location from your PC or cell phone, and request location updates at any time.  Or receive scheduled updates for after school or activity arrival times.
+*First 30 days free! At the end of the free 30 days, you will automatically be subscribed and charged $9.99 per month thereafter to locate up to 2 family members or $14.99 per month thereafter to locate up to 5 family members unless you cancel the service. To cancel, visit http://www.att.com/directbill and follow the instructions provided.  Other options include cancelling via the My Accounts portal on your handset or by calling AT&T Customer Care at 1-800-331-0500. If you call Customer Care, please enter the phone number that signed up for the AT&T FamilyMap service, press 0 for more options, and then select GPS Services in the automated menu to route your call appropriately. Standard data and messaging charges apply during the first 30 days and beyond. Service is limited to Consumer/Individual customers only. Service availability, timeliness or accuracy of location is not guaranteed. Coverage not available in all areas. For additional terms and conditions, go to att.com/familymap]]>
+				</info>
+				</item>
+				
+				<item>
+				<feature><![CDATA[AT&T Family Map: Locate up to 5 people]]></feature>
+				<price><![CDATA[$14.99]]></price>
+				<info><![CDATA[Sign up and get your first 30 days free*!]]></info>
+				</item>
+				
+				<item>
+				<feature><![CDATA[AT&T Locker 10GB]]></feature>
+				<price><![CDATA[$5.00]]></price>
+				<info><![CDATA[Store even more photos and videos with 10 GB of additional storage capacity in your AT&T Locker account.
+]]>
+<![CDATA[Protect valuable memories and make room for more. In just a few clicks AT&T Mobile Share lets you take photos and videos from your phone and send them directly to your computer, store them in your AT&T Locker, forward to friends and family or post to favorite Web sites like Facebook®, MySpaceT, Bebo and Photobucket.
+]]>
+<![CDATA[AT&T Locker is your online media album.Available when you want them, your photos and videos can be viewed and shared from your phone or the Web. You can relax knowing that your photos can be restored even if you lose your phone, switch phones, or just need more space on your phone for new photos.
+]]>
+<![CDATA[AT&T Mobile Share allows you to: Send photos and videos easily from your phone to your favorite social networks.
+]]>
+<![CDATA[Transfer photos and videos from your phone to your computer in just a few clicks
+]]>
+<![CDATA[Save your photos and videos on the Web for safekeeping with 250 MB of free storage
+]]>
+<![CDATA[Organize, edit, and share photos and videos on your AT&T Locker
+]]>
+<![CDATA[Share and save full resolution photos and videos up to 10 MB each
+]]>
+<![CDATA[If you don't have a Mobile Share-capable phone, you can still send media to your AT&T Locker, in a Picture/Video Message. Just take a picture or video with your phone and send it in a message to 700. Then log in to your AT&T Locker, at att.com/mobileshare, save it to your account and access it later. See www.att.com/wirelesslegal for terms.
+]]>
+<![CDATA[*First 30 days free! At the end of the free 30 days, you will automatically be subscribed and charged $9.99 per month thereafter to locate up to 2 family members or $14.99 per month thereafter to locate up to 5 family members unless you cancel the service. To cancel, visit http://www.att.com/directbill and follow the instructions provided.  Other options include cancelling via the My Accounts portal on your handset or by calling AT&T Customer Care at 1-800-331-0500. If you call Customer Care, please enter the phone number that signed up for the AT&T FamilyMap service, press 0 for more options, and then select GPS Services in the automated menu to route your call appropriately. Standard data and messaging charges apply during the first 30 days and beyond. Service is limited to Consumer/Individual customers only. Service availability, timeliness or accuracy of location is not guaranteed. Coverage not available in all areas. For additional terms and conditions, go to att.com/familymap
+]]>		
+</info>
+</item>
+
+
+<item>
+<feature><![CDATA[International Messaging LD 100 Package]]></feature>
+<price><![CDATA[$10.00 per line]]></price>
+<info><![CDATA[Stay in touch with text, picture, and video messages from the U.S. to over 200 countries.]]>
+
+<![CDATA[Get your message out into the world]]>
+
+<![CDATA[Send up to 100 text messages (20 cents/add'l message sent) from the U.S. to over 200 international countries and Picture/Video messages from the U.S. to more than 90 countries. Any messages you receive will rate as a normal domestic message. Domestic messaging plan required. For more information, visit att.com/global]]>
+</info>
+</item>
+
+<item>
+<feature><![CDATA[Voicemail to Text - Text Message Delivery]]></feature>
+<price><![CDATA[$9.99 per line]]></price>
+<info><![CDATA[Store even more photos and videos with 10 GB of additional storage capacity in your AT&T Locker account.
+]]>
+<![CDATA[AT&T Voicemail to Text is a service that converts voicemail messages to text. (You can still dial in to your voicemail to retrieve your messages if you prefer to).
+]]>
+<![CDATA[*Note: Voicemail messages that are sent to you via text (SMS) are sent at no additional charge but standard rates apply when you reply or forward by text, depending on your messaging plan. Visit http://wireless.att.com/voicemail for complete terms and conditions.
+]]>
+</info>
+</item>
+
+
+<item>
+<feature><![CDATA[Early Nights and Weekends for Families]]></feature>
+<price><![CDATA[$16.99]]></price>
+<info><![CDATA[Extend your  Night and Weekend calling times with the Early Nights & Weekends feature! Night and Weekend calling times are from 9:00 P.M. - 5:59A.M. Monday through Friday and all weekend.  Early Nights & Weekends feature give you more time to call by extending your calling time to 7:00 P.M. - 7:00 A.M Monday through Friday.
+]]>
+<![CDATA[How It Works]]>
+<![CDATA[AT&T Voicemail to Text is a service that converts voicemail messages to text. (You can still dial in to your voicemail to retrieve your messages if you prefer to).]]>
+<![CDATA[Note: Voicemail messages that are sent to you via text (SMS) are sent at no additional charge but standard rates apply when you reply or forward by text, depending on your messaging plan. Visit http://wireless.att.com/voicemail for complete terms and conditions.]]>
+</info>
+</item>
+
+<item>
+<feature><![CDATA[AT&T Roadside Assistance]]></feature>
+<price><![CDATA[$2.99 per line]]></price>
+<info><![CDATA[The help you need is just a phone call away.  Convenient, reliable, 24/7 AT&T Roadside Assistance coverage is available throughout the United States, Canada, Puerto Rico, and the U.S, Virgin Islands.  One phone call provides service, convenience, reliability, and peace of mind when traveling with a covered phone.
+]]>
+<![CDATA[Services include:]]>
+<![CDATA[Towing (for mechanical failures)]]>
+<![CDATA[Battery service/jump start]]>
+<![CDATA[Flat tire assistance]]>
+<![CDATA[Out-of-gas fuel delivery (up to three gallons, gas or diesel)]]>
+<![CDATA[Lockout assistance & key replacement, up to $50]]>
+<![CDATA[Flat tire assistance]]>
+<![CDATA[Only $2.99 per month and new subscribers get their first 30 days free. No long-term contract required; you may cancel at anytime by contacting AT&T Customer Service. To avoid the $2.99 monthly charge, you must cancel the feature within the first 30 days. The AT&T Roadside Assistance feature must be active for at least 72 hours to be eligible to utilize the AT&T Roadside Assistance program. Roadside Assistance service provide by Asurion Roadside Assistance Service, Inc., a licensed motor club for wireless customers of AT&T. Refer to Roadside Assistance Welcome Kit for complete terms and conditions.]]>
+</info>
+</item>
+
+<item>
+<feature><![CDATA[Enhanced Voice Mail]]></feature>
+<price><![CDATA[$1.99 per line]]></price>
+<info><![CDATA[Whether you're in a meeting or on the other line, you can't always answer your calls. Let voicemail take a message. Get the most from your voicemail by knowing its features and benefits, and how it works.
+]]>
+<![CDATA[Never miss a call
+]]>
+<![CDATA[Receive fast voicemail alerts
+]]>
+<![CDATA[Personalize your greeting
+]]>
+<![CDATA[Enhanced Voicemail doubles your message capacity from 20 to 40 messages, increases your message length by 1 minute and adds 7 more days of storage time. You can also send messages to groups and use member lists for added convenience.
+]]>
+</info>
+</item>
+
+<item>
+<feature><![CDATA[AT&T Navigator®]]></feature>
+<price><![CDATA[$9.99 per line]]></price>
+<info><![CDATA[AT&T Navigator provides voice-guided and visual turn-by-turn GPS driving directions with automatic reroute, full-color maps, and real-time traffic alerts all on your wireless phone. You also receive a host of other features such as a national business finder, lowest-price fuel finder and more. Subscribe now and get your first 30 days free.
+]]>
+<![CDATA[Free 30 Days available to new subscribers. Not available on Apple iPhone. Standard data and messaging charges apply during the first 30 days and ongoing use. You must cancel within 30 days or be automatically subscribed at a cost of $9.99 per month for unlimited routes. You may cancel by going to att.com/directbill or calling 800-331-0500 (or 611 from your phone). Compatible phone required.
+]]>
+</info>
+</item>
+
+
+<item>
+<feature><![CDATA[Detailed Billing]]></feature>
+<price><![CDATA[$1.99 per line]]></price>
+<info><![CDATA[Get a thorough overview of your monthly bill with Detailed Billing. Includes comprehensive call details, including phone numbers dialed and received, call lengths, and call times.
+]]>
+<![CDATA[Free 30 Days available to new subscribers. Not available on Apple iPhone. Standard data and messaging charges apply during the first 30 days and ongoing use. You must cancel within 30 days or be automatically subscribed at a cost of $9.99 per month for unlimited routes. You may cancel by going to att.com/directbill or calling 800-331-0500 (or 611 from your phone). Compatible phone required.
+]]>
+</info>
+</item>
+</option>
+</details>
+</plan>
+	
+
+
+<!--AT&T IND PHONE PLAN**************************************************-->
+		<plan id="attInd" logo="logo_ATT.gif"
+		calLink="http://www.att.com/datacalculator"
+		buyLink="http://www.dell.com/us/p/mobile-venue/pd?~ck=mn"
+		buyLinkVP="http://www.dell.com/us/p/mobile-venue-pro/pd?~ck=mn">			<intro>
+				<titleCopy><![CDATA[AT&T, The Nation's Fastest Mobile Broadband Network*]]></titleCopy>
+				<planName><![CDATA[Individual Plans]]></planName>
+				<calText calColor="#0085c3"><![CDATA[Access the AT&T Data Calculator to estimate your data usage.]]></calText>
+			</intro>
+			<planGraph x="25" y="120">
+				<barHeader><![CDATA[AT&T Nation]]></barHeader>
+				<barNumber1><![CDATA[ 450]]></barNumber1>
+				<barSub1><![CDATA[with Rollover® Minutes]]></barSub1>
+				<barNumber2><![CDATA[ 900]]></barNumber2>
+				<barSub2><![CDATA[with Rollover® Minutes]]></barSub2>
+				<barNumber3><![CDATA[Unlimited]]></barNumber3>
+				<barColor text="0x0085c3" gap="20" width="150" sGrad="0x007fbb" eGrad="0x091F2A"/>
+				<bar1 height="150" bul1="450 Anytime minutes" bul2="5000 Night &amp; Weekend minutes" dollars="39" cents="99"/>
+				<bar2 height="220" bul1="900 Anytime minutes" bul2="Unlimited Night &amp; Weekend minutes" dollars="59" cents="99"/>
+				<bar3 height="300" bul1="Unlimited Anytime Minutes" bul2="Unlimited Night &amp; Weekend minutes" dollars="69" cents="99"/>
+			</planGraph>
+			
+			
+			<grid>
+				<planGroup id="messPlans">
+					<plan>
+						<planTitle>Messaging 1000</planTitle>
+						<perMonth>1000</perMonth>
+						<fee>10</fee>
+					</plan>
+					<plan>
+						<planTitle><![CDATA[Messaging Unlimited with Mobile to Any Mobile Calling]]></planTitle>
+						<perMonth>Unlimited</perMonth>
+						<fee>20</fee>
+					</plan>
+				</planGroup>
+
+				<planGroup id="dataPlans">
+					<plan>
+						<planTitle>Data Plus 200 MB</planTitle>
+						<perMonth>200 MB</perMonth>
+						<fee>15</fee>
+					</plan>
+					<plan>
+						<planTitle>DataPro 2GB</planTitle>
+						<perMonth>2GB</perMonth>
+						<fee>25</fee>
+					</plan>
+				</planGroup>
+			</grid>
+			
+<!--ATT INDIVIDUAL BAR PLANS -->
+			<details>
+				<am450 header="Anytime Minutes 450" infoHeader="Rate Plan Details"
+					dis="*Unlimited weekday minutes from 9pm to 6am and unlimited minutes on weekends.">
+					<feature><![CDATA[Night & Weekend* minutes Unlimited]]></feature>
+					<feature><![CDATA[Mobile to Mobile minutes Unlimited to other AT&T wireless customers while in the U.S.]]></feature>
+					<feature>Long Distance $0.00</feature>
+					<feature>Roaming Charges $0.00</feature>
+					<feature>Additional minutes $.45 per minute</feature>
+					<feature>Primary line one-time activation fee $36.00</feature>
+					<feature>Contract length 2 years</feature>
+				</am450>
+				<am450inc header="Included Features:">
+				<feature>Call Forwarding</feature>
+					<feature>Caller ID</feature>
+					<feature>Call Waiting</feature>
+					<feature>Basic Voice Mail</feature>
+					<feature>Conference Calling</feature>
+				</am450inc>
+				<am450dis/>
+				
+				<am900 header="Anytime Minutes 900" infoHeader="Rate Plan Details"
+					dis="*Unlimited weekday minutes from 9pm to 6am and unlimited minutes on weekends.">
+					<feature><![CDATA[Night & Weekend* minutes Unlimited]]></feature>
+					<feature><![CDATA[Mobile to Mobile minutes Unlimited to other AT&T wireless customers while in the U.S.]]></feature>
+					<feature>Long Distance $0.00</feature>
+					<feature>Roaming Charges $0.00</feature>
+					<feature>Additional minutes $.00 per minute</feature>
+					<feature>Primary line one-time activation fee $36.00</feature>
+					<feature>Contract length 2 years</feature>
+				</am900>
+				<am900inc  header="Included Features:">
+				<feature>Call Forwarding</feature>
+					<feature>Caller ID</feature>
+					<feature>Call Waiting</feature>
+					<feature>Basic Voice Mail</feature>
+					<feature>Conference Calling</feature>
+				</am900inc>
+				
+				<uam header="Anytime Minutes Unlimited" infoHeader="Rate Plan Details"
+					dis="*Unlimited weekday minutes from 9pm to 6am and unlimited minutes on weekends.">
+					<feature><![CDATA[Night & Weekend* minutes Unlimited]]></feature>
+					<feature><![CDATA[Mobile to Mobile minutes Unlimited to other AT&T wireless customers while in the U.S.]]></feature>
+					<feature>Long Distance $0.00</feature>
+					<feature>Roaming Charges $0.00</feature>
+					<feature>Additional minutes $.00 per minute</feature>
+					<feature>Primary line one-time activation fee $36.00</feature>
+					<feature>Contract length 2 years</feature>
+				</uam>
+				<uaminc  header="Included Features:">
+				<feature>Call Forwarding</feature>
+					<feature>Caller ID</feature>
+					<feature>Call Waiting</feature>
+					<feature>Basic Voice Mail</feature>
+					<feature>Conference Calling</feature>
+				</uaminc>
+				
+				
+				
+<!--ATT INDIVIDUAL GRID PLAN RATES -->
+				<m1000 header="Messaging 1000" infoHeader="Rate Plan Details"
+					dis="Prices are billed monthly and are valid for use in the U.S. only. Charges for international messages sent from the U.S. are $0.25 for Text Messages and $0.50 for Picture/Video Messages. Charges for usage while roaming internationally: $0.50 for each text message sent, $1.30 for each picture/video message sent, and $0.0195 for each kilobyte used. Standard rates apply to all incoming messages. Additional charges for premium messages and content apply. For full details on Messaging &amp; Data Bundles, go to att.com/mediaterms. Domestic Pay-Per-Use Charges: Text/Instant Messaging $0.20 per message; Picture/Video Messages $0.30 per message.">
+					<feature>1000 Messages per month</feature>
+					<feature>Monthly cost: $10</feature>
+					<feature>Overage fee: $0.10 per message</feature>
+					<feature>For a low monthly fee, Messaging 1000 gives you 1000 text, picture, video, and Instant Messaging messages per month.
+					</feature>
+				</m1000>
+				<m1000txt header="Text Messaging">
+					<feature>Fast, fun, to-the-point communication</feature>
+					<feature>Just type the message, pick a wireless phone number, and send.</feature>
+				</m1000txt>
+				<m1000pic header="Picture and Video Messaging">
+					<feature>Share a smile, a cute moment, or that thing you just have to buy.</feature>
+					<feature>Snap the photo or video with your camera phone, pick a mobile phone or email address, and send.</feature>
+					<feature>Call Waiting</feature>
+					<feature>Basic Voice Mail</feature>
+					<feature>Conference Calling</feature></m1000pic>
+				<m1000inst header="Instant Messaging">
+					<feature>Instant Messaging</feature>
+					<feature>Chat real-time with IM on your phone</feature>
+					<feature>Use AOL® Instant Messenger, Yahoo!®, and Windows Live Messenger®</feature>
+				</m1000inst>
+
+
+				<famMess header="Family Messaging" infoHeader="Rate Plan Details"
+					dis="Prices are billed monthly and are valid for use in the U.S. only. Charges for international messages sent from the U.S. are $0.25 for Text Messages and $0.50 for Picture/Video Messages. Charges for usage while roaming internationally: $0.50 for each text message sent, $1.30 for each picture/video message sent, and $0.0195 for each kilobyte used. Standard rates apply to all incoming messages. Additional charges for premium messages and content apply. For full details on Messaging &amp; Data Bundles, go to att.com/mediaterms. Domestic Pay-Per-Use Charges: Text/Instant Messaging $0.20 per message; Picture/Video Messages $0.30 per message.">
+					<feature><![CDATA[Unlimited Calling and Messaging to or from any Mobile in the U.S., Puerto Rico, or U.S.V.I. Messaging Unlimited includes domestic Text, Picture, Video and Instant Messaging.]]></feature>
+					<feature><![CDATA[Monthly cost: $20]]></feature>
+					<feature><![CDATA[Overage fee: none]]></feature>
+				</famMess>
+				<famMessTxt header="Text Messaging">
+					<feature><![CDATA[Privapte, to-the-point communication.]]></feature>
+					<feature><![CDATA[Just type the message, pick a wireless phone number, and send.]]></feature>
+				</famMessTxt>
+				<famMessPic header="Picture and Video Messaging">
+					<feature><![CDATA[Share a smile, a cute moment, or that thing you just have to buy.]]></feature>
+					<feature><![CDATA[Snap the photo or video with your camera phone, pick a mobile phone or email address, and send.]]></feature>
+				</famMessPic>
+				<famMessInst header="Instant Messaging">
+					<feature><![CDATA[Instant Messaging]]></feature>
+					<feature><![CDATA[Chat real-time with IM on your phone]]></feature>
+					<feature><![CDATA[Use AOL® Instant Messenger, Yahoo!®, and Windows Live Messenger®]]></feature>
+				</famMessInst>
+
+
+<!--ATT INDIVIDUAL ADDITIONAL OPTIONS -->
+<option header="Additional Options">
+<!--<item>
+<feature><![CDATA[AT&T Family Map: Locate up to 2 people]]></feature>
+<price><![CDATA[$9.99]]></price>
+
+<info><![CDATA[Sign up and get your first 30 days free*!
+Give your children independence and yourself peace of mind with AT&T FamilyMap.  Track your child's location from your PC or cell phone, and request location updates at any time.  Or receive scheduled updates for after school or activity arrival times.
+*First 30 days free! At the end of the free 30 days, you will automatically be subscribed and charged $9.99 per month thereafter to locate up to 2 family members or $14.99 per month thereafter to locate up to 5 family members unless you cancel the service. To cancel, visit http://www.att.com/directbill and follow the instructions provided.  Other options include cancelling via the My Accounts portal on your handset or by calling AT&T Customer Care at 1-800-331-0500. If you call Customer Care, please enter the phone number that signed up for the AT&T FamilyMap service, press 0 for more options, and then select GPS Services in the automated menu to route your call appropriately. Standard data and messaging charges apply during the first 30 days and beyond. Service is limited to Consumer/Individual customers only. Service availability, timeliness or accuracy of location is not guaranteed. Coverage not available in all areas. For additional terms and conditions, go to att.com/familymap
+]]>
+</info>
+</item>
+
+<item>
+<feature><![CDATA[AT&T Family Map: Locate up to 5 people]]></feature>
+<price><![CDATA[$9.99]]></price>
+<info><![CDATA[Sign up and get your first 30 days free*!
+]]>
+</info>
+</item>-->
+
+<item>
+<feature>
+<![CDATA[AT&T Locker 10GB]]></feature>
+<price><![CDATA[$5.00]]></price>
+
+<info>
+<![CDATA[Protect valuable memories and make room for more. In just a few clicks AT&T Mobile Share lets you take photos and videos from your phone and send them directly to your computer, store them in your AT&T Locker, forward to friends and family or post to favorite Web sites like Facebook®, MySpaceT, Bebo and Photobucket.
+]]>
+<![CDATA[AT&T Locker is your online media album.Available when you want them, your photos and videos can be viewed and shared from your phone or the Web. You can relax knowing that your photos can be restored even if you lose your phone, switch phones, or just need more space on your phone for new photos.
+]]>
+<![CDATA[AT&T Mobile Share allows you to: Send photos and videos easily from your phone to your favorite social networks.
+]]>
+<![CDATA[Transfer photos and videos from your phone to your computer in just a few clicks
+]]>
+<![CDATA[Save your photos and videos on the Web for safekeeping with 250 MB of free storage
+]]>
+<![CDATA[Organize, edit, and share photos and videos on your AT&T Locker
+]]>
+<![CDATA[Share and save full resolution photos and videos up to 10 MB each
+]]>
+<![CDATA[If you don't have a Mobile Share-capable phone, you can still send media to your AT&T Locker, in a Picture/Video Message. Just take a picture or video with your phone and send it in a message to 700. Then log in to your AT&T Locker, at att.com/mobileshare, save it to your account and access it later. See www.att.com/wirelesslegal for terms.]]>
+</info>
+</item>
+
+<item>
+<feature>
+<![CDATA[International Messaging LD 100]]></feature>
+<price><![CDATA[$10.00]]></price>
+
+<info>
+<![CDATA[Stay in touch with text, picture, and videomessages from the U.S. to over 200 countries.
+]]>
+<![CDATA[Send up to 100 text messages (20 cents/add'lmessage sent) from the U.S. to over 200 international countriesand Picture/Video from the U.S. to more than 90 countries. Anymessages you receive will rate as a normal domestic message.Domestic messaging plan required. For more information, visitatt.com/global]]>
+</info>
+</item>
+
+<item>
+<feature>
+<![CDATA[Voicemail to Text - Text Message Delivery]]></feature>
+<price><![CDATA[$3.99]]></price>
+
+<info>
+<![CDATA[Receive your voicemails as text messages, emails or both.
+]]>
+<![CDATA[Respond how you want - call back, send a text or reply by email.
+]]>
+<![CDATA[Forward your voicemail messages to others by text or email
+]]>
+<![CDATA[Save your messages in your phone or on your computer for as long as you want
+]]>
+</info>
+</item>
+
+<item>
+<feature>
+<![CDATA[Early Nights and Weekends for Families]]></feature>
+<price><![CDATA[$8.99]]></price>
+
+<info>
+<![CDATA[Extend your Night and Weekend calling times with the Early Nights & Weekends feature! Night and Weekend calling times are from 9:00 P.M. - 5:59A.M. Monday through Friday and all weekend. Early Nights & Weekends feature give you more time to call by extending your calling time to 7:00 P.M. - 7:00 A.M Monday through Friday, all for just $8.99 per month for qualified rate plans.
+]]>
+<![CDATA[How It Works]]>
+<![CDATA[Apply your Early Night & Weekend Minutes to calls made from your AT&T device between the hours of 7 p.m. and 7 a.m., Monday through Friday. Calls must be from within your plan calling area.
+]]>
+<![CDATA[Have Questions?]]>
+<![CDATA[If you believe that you were incorrectly charged for a Night & Weekend call, please check the following before you contact Customer Care:
+]]>
+<![CDATA[Was the call made or received within your rate plan's calling area?
+]]>
+<![CDATA[Do you have the Early Nights and Weekends feature added to your account?
+]]>
+<![CDATA[Was the call made between the hours of 7 p.m. and 7 a.m.?]]>				
+</info>
+</item>
+
+
+<item>
+<feature>
+<![CDATA[AT&T Roadside Assistance]]></feature>
+<price><![CDATA[$2.99]]></price>
+
+<info>
+<![CDATA[The help you need is just a phone call away. Convenient, reliable, 24/7 AT&amp;T Roadside Assistance coverage is available throughout the United States, Canada, Puerto Rico, and the U.S, Virgin Islands. One phone call provides service , convenience, reliability, and peace of mine when traveling with a covered phone.
+]]>
+<![CDATA[Services include:]]>
+<![CDATA[Towing (for mechanical failures)
+]]>
+<![CDATA[Battery service/jump start
+]]>
+<![CDATA[Flat tire assistance
+]]>
+<![CDATA[Out-of-gas fuel delivery (up to three gallons, gas or diesel)
+]]>
+<![CDATA[Lockout assistance &amp; key replacement, up to $50]]>
+</info>
+</item>
+
+
+
+			
+<item>
+<feature>
+<![CDATA[Enhanced Voice Mail]]></feature>
+<price><![CDATA[$1.99]]></price>
+
+<info>
+<![CDATA[Whether you're in a meeting or on the other line, you can't always answer your calls. Let voicemail take a message. Get the most from your voicemail by knowing its features and benefits, and how it works.
+]]>
+<![CDATA[Never miss a call
+]]>
+<![CDATA[Receive fast voicemail alerts
+]]>
+<![CDATA[Personalize your greeting
+]]>
+<![CDATA[Enhanced Voicemail doubles your message capacity from 20 to 40 messages, increases your message length by 1 minute and adds 7 moredays of storage time. You can also send messages to groups and use member lists for added convenience.]]>
+</info>
+</item>
+
+<item>
+<feature>
+<![CDATA[AT&T Navigator®]]></feature>
+<price><![CDATA[$9.99]]></price>
+
+<info>
+<![CDATA[AT&T Navigator provides voice-guided and visual turn-by-turn GPS driving directions with automatic reroute, full-color maps, and real-time traffic alerts all on your wireless phone. You also receive a host of other features such as a national business finder, lowest-price fuel finder and more. Subscribe now and get your first 30 days free.]]>
+<![CDATA[Free 30 Days available to new subscribers. Not available on Apple iPhone. Standard data and messaging charges apply during the first 30 days and ongoing use. You must cancel within 30 days or be automatically subscribed at a cost of $9.99 per month for unlimited routes. You may cancel by going to att.com/directbill or calling 800-331-0500 (or 611 from your phone). Compatible phone required.]]>
+</info>
+</item>
+		
+		
+<item>
+<feature>
+<![CDATA[Detailed Billing]]></feature>
+<price><![CDATA[$1.99]]></price>
+<info>
+<![CDATA[Get a thorough overview of your monthly bill with Detailed Billing.
+]]>
+<![CDATA[Includes comprehensive call details, including phone numbers dialed and received, call lengths, and call times.
+]]>
+</info>
+</item>			
+
+</option>
+</details>
+<terms x="6" y="472" link="https://www.att.com/wirelessterms">
+<![CDATA[For full terms and conditions of service, please visit www.att.com/wirelessterms]]></terms>
+</plan>
+
+
+
+
+
+<!--T-MOBILE************************************************************************************************* -->
+		
+<!--TMOBILE DATA CONNECT PLAN -->
+		<plan id="tmDC" logo="logo_Tmobile.jpg" 
+		calLink="http://www.t-mobile.com/Tools/MBCalculator.aspx"
+		buyLink="http://www.dell.com/us/p/t-mobile-mobile-broadband.aspx?~ck=mn">	
+			<intro>
+				<titleCopy><![CDATA[Get fast, easy wireless Internet when you need it, anywhere within T-Mobile's nationwide network.]]></titleCopy>
+				<planName><![CDATA[Tablet & MBB Data Contract]]></planName>
+				<dataIntro><![CDATA[Get fast, easy wireless Internet when you need it, anywhere within T-Mobile's nationwide network, with T-Mobile's webConnect Mobile Broadband data plans.
+
+• Unlimited WiFi web access at T-Mobile HotSpots 
+• 2 year contract term]]></dataIntro>
+<calText calColor="#e62480"><![CDATA[Access the T-Mobile Data Calculator to estimate your data usage.]]></calText>	
+			</intro>
+			<planGraph x="410" y="110">
+				<barHeader><![CDATA[Classic webConnect]]></barHeader>
+				<barSub1><![CDATA[Plus]]></barSub1>
+				<barNumber1><![CDATA[ 2 GB]]></barNumber1>
+				<barSub2><![CDATA[Premium]]></barSub2>
+				<barNumber2><![CDATA[ 5 GB]]></barNumber2>
+				<barSub3><![CDATA[Ultra]]></barSub3>
+				<barNumber3><![CDATA[ 10 GB]]></barNumber3>
+				<barColor text="0xe62480" gap="15" width="150" sGrad="0xe62480" eGrad="0x6d103d"/>
+				<bar1 height="160" bul1="Overage Free Plan" bul2="Free Unlimited Messaging*" dollars="29" cents="99"/>
+				<bar2  height="210" bul1="Overage Free Plan" bul2="Free Unlimited Messaging*" dollars="39" cents="99" />
+				<bar3  height="320" bul1="Overage Free Plan" bul2="Free Unlimited Messaging*" dollars="49" cents="99" />
+			</planGraph>
+			
+			<options>
+				<option><![CDATA[Free Unlimited Messaging]]></option>
+				<messages><![CDATA[Unlimited]]></messages>
+				<fee><![CDATA[Included on tablets only]]></fee>
+				<overage><![CDATA[None]]></overage>
+			</options>
+
+			<terms link="http://www.t-mobile.com/Templates/Popup.aspx?PAsset=Ftr_Ftr_TermsAndConditions&amp;print=true">
+			<![CDATA[ View the T-Mobile Customer Agreement here. ›]]></terms>
+		</plan>
+			
+		
+<!--TMOBILE DATA SESSION PLAN -->
+		<plan id="tmDS" logo="logo_Tmobile.jpg"
+		calLink="http://www.dell.com/us/p/mobile-streak-7/pd"
+		buyLink="http://www.dell.com/us/p/t-mobile-mobile-broadband.aspx?~ck=mn">
+			<intro>
+				<titleCopy><![CDATA[Get as much or as little data that you need, when you need it.]]></titleCopy>
+				<planName><![CDATA[Prepaid Data Plans]]></planName>
+				<introCopy><![CDATA[Get as much or as little data that you need, when you need it.]]></introCopy>
+				<bullet1><![CDATA[No annual contract]]></bullet1>
+				<bullet2><![CDATA[Nationwide high speed network]]></bullet2>
+				<dataIntro><![CDATA[Pay for only what you need when you need it. Purchase a Dell laptop or tablet with a T-Mobile mobile broadband card built in, without the commitment of a contract. Then simply click on the Dell Mobile Broadband Card Utility icon on your laptop whenever you need high-speed Internet on the go, select the pass that fits your needs, submit your payment, and your card is immediately activated and ready for use! It's the simple, no-contract way to get mobile Internet from T-Mobile's 3G/4G network when you need it most.]]></dataIntro>
+			<calText calColor="#e62480">
+			<![CDATA[Access the T-Mobile Data Calculator to estimate your data usage.]]></calText>	
+			</intro>
+
+			<planGraph x="358" y="105">
+				<barSub1><![CDATA[WeekPass]]></barSub1>
+				<barNumber1><![CDATA[ (100 MB)]]></barNumber1>
+				<barSub2><![CDATA[MonthPass]]></barSub2>
+				<barNumber2><![CDATA[ (1 GB)]]></barNumber2>
+				<barSub3><![CDATA[MonthPass]]></barSub3>
+				<barNumber3><![CDATA[ (3 GB)]]></barNumber3>
+				<barColor text="0xe62480" gap="23" width="160" sGrad="0xe62480" eGrad="0x6d103d"/>
+				<bar1 height="150" bul1="100 MB per week" bul2="No annual contract" bul3="Nationwide high speed network" dollars="10" cents="00"/>
+				<bar2 bul1="1 GB per month" bul2="No annual contract" bul3="Nationwide high speed network" height="200" dollars="30" cents="00" />
+				<bar3 bul1="3 GB per month" bul2="No annual contract" bul3="Nationwide high speed network" height="250" dollars="50" cents="00" />
+			</planGraph>
+<terms link="http://www.t-mobile.com/Templates/Popup.aspx?PAsset=Ftr_Ftr_TermsAndConditions&amp;print=true">
+<![CDATA[ View the T-Mobile Customer Agreement here.]]></terms>
+		</plan>
+		
+	
+	
+		
+		
+<!--TMOBILE INDIVIDUAL PLAN -->
+		<plan id="tmInd" logo="logo_Tmobile.jpg" 
+		calLink="http://www.t-mobile.com/Tools/MBCalculator.aspx"
+		buyLink="http://www.dell.com/us/p/mobile-venue-pro/pd?~ck=mn">
+				<intro>
+					<titleCopy><![CDATA[T-Mobile offers a variety of cell phone plans where you'll enjoy:]]></titleCopy>
+					<planName><![CDATA[Individual Plans]]></planName>
+					
+					<dataIntro><![CDATA[
+• Unlimited nationwide T-Mobile to T-Mobile calling
+• Unlimited nights and weekends
+• Whenever Minutes® you can use anytime
+• Unlimited Messaging included on most plans
+• Unlimited Data in 200 MB, 2, 5, and 10 GB options]]></dataIntro>
+					<calText calColor="#e62480"><![CDATA[Access the T-Mobile Data Calculator to estimate your data usage.]]></calText>	
+				</intro>
+
+				<planGraph x="20" y="220">
+					
+					<barHeader><![CDATA[Classic]]></barHeader>
+					<barNumber1><![CDATA[ 500]]></barNumber1>
+					<barSub1><![CDATA[Individual ]]></barSub1>
+					<barNumber2><![CDATA[ Unlimited]]></barNumber2>
+					<barSub2><![CDATA[Individual ]]></barSub2>
+					<barColor text="0xe62480" gap="30" width="200" sGrad="0xe62480" eGrad="0x560c30"/>
+					<bar1 height="150" bul1="500 Whenever minutes" bul2="500 Talk + Unlimited Text" dollars="49" cents="99"></bar1>
+					<bar2 height="200" bul1="Unlimited Whenever minutes" bul2="Unlimited Talk + Unlimited Text" dollars="59" cents="99"></bar2>
+				</planGraph>
+	
+				<grid>
+					<planGroup id="dataPlans">
+						<plan>
+							<planTitle><![CDATA[Unlimited - Simple]]></planTitle>
+							<perMonth><![CDATA[200 MB]]></perMonth>
+							<fee><![CDATA[10]]></fee>
+						</plan>
+
+						<plan>
+							<planTitle><![CDATA[Unlimited - Plus]]></planTitle>
+							<perMonth><![CDATA[2GB]]></perMonth>
+							<fee><![CDATA[20]]></fee>
+						</plan>
+
+						<plan>
+							<planTitle><![CDATA[Unlimited - Premium]]></planTitle>
+							<perMonth><![CDATA[5GB]]></perMonth>
+							<fee><![CDATA[30]]></fee>
+						</plan>
+						<plan>
+							<planTitle><![CDATA[Unlimited - Ultra]]></planTitle>
+							<perMonth><![CDATA[10GB]]></perMonth>
+							<fee><![CDATA[60]]></fee>
+						</plan>
+					</planGroup>
+				</grid>
+
+
+<!--TMOBILE INDIVIDUAL BAR PLANS -->			
+				<details>
+					<ind500 header="Individual 500" infoHeader="Rate Plan Features"
+					dis="*Unlimited weekday minutes from 9pm to 6am and unlimited minutes on weekends.">
+						<feature><![CDATA[Whenever minutes: 500 per month]]></feature>
+						<feature><![CDATA[Weekend minutes: Unlimited ]]></feature>
+						<feature><![CDATA[Weeknight minutes: Unlimited ]]></feature>
+						<feature><![CDATA[T-Mobile to T-Mobile minutes: Unlimited ]]></feature>
+						<feature><![CDATA[Shared minutes: None]]></feature>
+						<feature><![CDATA[Additional minutes: $0.45 per minute]]></feature>
+						<feature><![CDATA[Messages: Unlimited (text, picture, and video)]]></feature>
+						<feature><![CDATA[Web Access: Unlimited with your selected Data Allowance at up to 4G speeds on capable devices]]>
+						</feature>
+						</ind500>
+						
+						
+						<ind500Other header="Other Items">
+						<feature><![CDATA[Credit approval required]]></feature>
+						<feature><![CDATA[Minimum contract term: 2-year ]]></feature>
+						<feature><![CDATA[Activation fee: $35 per line ]]></feature>
+						<feature><![CDATA[Early termination fee: Up to $200 per line ]]></feature>
+						<feature><![CDATA[Conference Calling]]></feature>
+						</ind500Other>
+						<ind500Cancel header="Cancellation">
+						<feature>
+						<![CDATA[If you are not satisfied with our service, you may cancel within 14 days of activation (or longer, depending on different states) with no early cancellation fee.]]>
+						</feature>
+						</ind500Cancel>
+						
+						
+						<indUL header="Individual Unlimited" 
+						infoHeader="Rate Plan Features"
+						dis="*Unlimited weekday minutes from 9pm to 6am and unlimited minutes on weekends.">
+						<feature><![CDATA[Whenever minutes: 1000 per month]]></feature>
+						<feature><![CDATA[Weekend minutes: Unlimited]]></feature>
+						<feature><![CDATA[Weeknight minutes: Unlimited]]></feature>
+						<feature><![CDATA[T-Mobile to T-Mobile minutes: Unlimited]]></feature>
+						<feature><![CDATA[Shared minutes: None]]></feature>
+						<feature><![CDATA[Additional minutes: $0.45 per minute]]></feature>
+						<feature><![CDATA[Messages: Not available. If desired, please review other more cost effective Plans (e.g., Even More for Family Unlimited Talk + Unlimited Text)]]></feature>
+						<feature><![CDATA[Web Access: Unlimited with your selected Data Allowance at up to 4G speeds on capable devices]]></feature>
+						<feature><![CDATA[Free domestic long distance and no digital roaming charges across the US]]></feature>
+						</indUL>
+						
+						<indULOther header="Other Items">
+						<feature><![CDATA[Credit approval required]]></feature>
+						<feature><![CDATA[Minimum contract term: 2-year]]></feature>
+						<feature><![CDATA[Activation fee: $35 per line]]></feature>
+						<feature><![CDATA[Early termination fee: Up to $200 per line]]></feature>
+						<feature><![CDATA[Whenever minutes: 1000 per month]]></feature>
+						</indULOther>
+						<indULCancel header="Cancellation">
+						<feature><![CDATA[If you are not satisfied with our service, you may cancel within 14 days of activation (or longer, depending on different states) with no early cancellation fee.]]>
+						</feature>
+						</indULCancel>
+						
+						
+						<dpUL header="Simple - Unlimited" 
+						infoHeader="Rate Plan Info"
+						dis="*$10.00 (Overage of $0.10/MB; Maximum Overage $30)
+There is an overage charge of $0.10/MB with a maximum overage of $30 per month (maximum fee in a month cannot exceed $40 - $10 for the MRC plus $30 Overage).
+If the customer usage exceeds 5 GB, speed will be automatically reduced for the remainder of the billing period.">
+						<feature><![CDATA[Unlimited Data in 200 MB, 2 GB, 5 GB, and 10 GB high-speed options allow you to pick a data package that meets your needs and budget without worrying about overage fees. If you reach your allotted high-speed data amount for the month, you can still enjoy unlimited data connection at a reduced speed]]></feature>
+						</dpUL>
+						
+							
+						
+						<option header="Additional Options">
+						<item>
+						<feature><![CDATA[HotSpot]]>
+						</feature>
+						<price><![CDATA[$9.99]]>
+						</price>
+						<info><![CDATA[Stay connected get Wi-Fi access on your laptop, phone, and select cameras and gaming devices at places you already go, including Starbucks, Borders Books and Music stores, airports such as DFW, LAX and SFO, Barnes & Noble bookstores and many more.
+]]>
+</info>
+</item>
+<item>
+<feature><![CDATA[International Discounted Calling]]></feature>
+<price><![CDATA[$5.00]]></price>
+<info><![CDATA[OneWorld ILD
+]]>
+<![CDATA[Get great discounted rates on international calls made from your mobile phone. Additional credit approval required.
+]]>
+</info>
+</item>
+
+<item>
+<feature><![CDATA[WorldClass International Service]]></feature>
+<price><![CDATA[Free]]></price>
+<info><![CDATA[OneWorld ILD
+]]>
+<![CDATA[WorldClass Roaming
+]]>			
+<![CDATA[Small rates for a big world. Expand your horizons when calling from outside the US, with no monthly fee. Dual- or tri-band phones required, unless calling from Mexico. Additional credit approval required.
+]]>
+</info>
+</item>
+
+
+<item>
+<feature><![CDATA[Mas Mexico: Unlimited texting and discounted calling to Mexico]]></feature>
+<price><![CDATA[$5.00]]></price>
+<info><![CDATA[OneWorld ILD
+]]>
+<![CDATA[International Services
+]]>
+<![CDATA[Stay in touch with friends and family in Mexico- for a great low price. Send unlimited text messages to Mexico, plus get discounted calling rates of $.05 per minute (to landline phones) or $.25 per minute (to cell phones).
+]]>
+<![CDATA[Limited-time offer, subject to change. Taxes and fees additional. Qualifying post-paid plan with unlimited domestic messaging required. Calls and text messages must originate in the US. Unlimited features are for direct communications between two people. Credit approval may be required.
+]]>
+</info>
+</item>
+
+
+<item>
+<feature><![CDATA[Visual Voicemail]]></feature>
+<price><![CDATA[Free]]></price>				
+<info><![CDATA[Visual Voicemail makes managing your voice messages even easier than before. Visual Voicemail allows you to:
+]]>
+<![CDATA[Play and replay messages in any order
+]]>
+<![CDATA[Save voice messages to your phone
+]]>
+<![CDATA[Choose how you want to respond to messages
+]]>
+<![CDATA[Share special audio messages via e-mail
+]]>
+<![CDATA[Create personalized greetings
+]]></info>
+</item>
+</option>
+</details>
+<terms x="6" y="472" link="http://www.t-mobile.com/Templates/Popup.aspx?PAsset=Ftr_Ftr_TermsAndConditions&amp;print=true">
+<![CDATA[For full terms and conditions of service, please visit www.att.com/wirelessterms]]></terms>
+</plan>
+
+
+
+
+<!--TMOBILE FAMILY PLAN -->
+		<plan id="tmFam" logo="logo_Tmobile.jpg" 
+			calLink="http://www.t-mobile.com/Tools/MBCalculator.aspx"
+		buyLink="http://www.dell.com/us/p/mobile-venue-pro/pd?~ck=mn">
+				<intro>
+					<titleCopy><![CDATA[T-Mobile offers a variety of cell phone plans where you'll enjoy:]]></titleCopy>
+					<planName><![CDATA[Family Plans]]></planName>
+					<dataIntro><![CDATA[
+• Unlimited nationwide T-Mobile to T-Mobile calling
+• Unlimited nights and weekends
+• Whenever Minutes® you can use anytime
+• Unlimited Messaging included on most plans
+• Unlimited Data in 200 MB, 2, 5, and 10 GB options]]></dataIntro>
+				<calText calColor="#e62480"><![CDATA[Access the T-Mobile Data Calculator to estimate your data usage.]]></calText>	
+				</intro>
+
+				<planGraph x="25" y="210">
+					<barHeader><![CDATA[Classic]]></barHeader>
+					<barNumber1><![CDATA[]]></barNumber1>
+					<barSub1><![CDATA[Family 1000]]></barSub1>
+					<barNumber2><![CDATA[]]></barNumber2>
+					<barSub2><![CDATA[Family Unlimited]]></barSub2>
+					<barColor text="0xe62480" gap="25" width="170" sGrad="0xe62480" eGrad="0x560c30"/>
+					<bar1 height="150" bul1="1000 Whenever minutes" bul2="1000 Talk + Unlimited Text" dollars="79" cents="99"/>
+					<bar2 height="200" bul1="Unlimited Text" bul2="Unlimited Talk" dollars="99" cents="98"/>
+				</planGraph>
+	
+				<grid>
+					<planGroup id="dataPlans">
+						<plan>
+							<planTitle><![CDATA[Unlimited - Simple]]></planTitle>
+							<perMonth><![CDATA[200 MB]]></perMonth>
+							<fee><![CDATA[10]]></fee>
+						</plan>
+
+						<plan>
+							<planTitle><![CDATA[Unlimited - Plus]]></planTitle>
+							<perMonth><![CDATA[2GB]]></perMonth>
+							<fee><![CDATA[20]]></fee>
+						</plan>
+
+						<plan>
+							<planTitle><![CDATA[Unlimited - Premium]]></planTitle>
+							<perMonth><![CDATA[5GB]]></perMonth>
+							<fee><![CDATA[30]]></fee>
+						</plan>
+						<plan>
+							<planTitle><![CDATA[Unlimited - Ultra]]></planTitle>
+							<perMonth><![CDATA[10GB]]></perMonth>
+							<fee><![CDATA[60]]></fee>
+						</plan>
+					</planGroup>
+				</grid>
+
+
+<!--TMOBILE FAMILY BAR PLANS -->			
+				<details>
+					<fam1000 header="Family 1000" infoHeader="Rate Plan Features">
+						<feature><![CDATA[Whenever minutes: 1000 per month]]></feature>
+						<feature><![CDATA[Weekend minutes: Unlimited ]]></feature>
+						<feature><![CDATA[Weeknight minutes: Unlimited ]]></feature>
+						<feature><![CDATA[T-Mobile to T-Mobile minutes: Unlimited ]]></feature>
+						<feature><![CDATA[Shared minutes: 1000 per month]]></feature>
+						<feature><![CDATA[Additional minutes: $0.45 per minute]]></feature>
+						<feature><![CDATA[Messages: Unlimited (text, picture, and video)]]></feature>
+						<feature><![CDATA[Web Access: Unlimited with your selected Data Allowance at up to 4G speeds on capable devices]]>
+						</feature>
+						</fam1000>
+						
+						
+						<fam1000Other header="Other Items">
+						<feature><![CDATA[Credit approval required]]></feature>
+						<feature><![CDATA[Minimum contract term: 2-year ]]></feature>
+						<feature><![CDATA[Activation fee: $35 per line ]]></feature>
+						<feature><![CDATA[Early termination fee: Up to $200 per line ]]></feature>
+						<feature><![CDATA[Conference Calling]]></feature>
+						</fam1000Other>
+						
+						
+						<fam1000Cancel header="Cancellation">
+						<feature>
+						<![CDATA[If you are not satisfied with our service, you may cancel within 14 days of activation (or longer, depending on different states) with no early cancellation fee.]]>
+						</feature>
+						</fam1000Cancel>
+					
+					
+						<fam2000 header="Family 2000" 
+						infoHeader="Rate Plan Features">
+						<feature><![CDATA[Whenever minutes: 2000 per month]]></feature>
+						<feature><![CDATA[Weekend minutes: Unlimited]]></feature>
+						<feature><![CDATA[Weeknight minutes: Unlimited]]></feature>
+						<feature><![CDATA[T-Mobile to T-Mobile minutes: Unlimited]]></feature>
+						<feature><![CDATA[Shared minutes: 2000 per month]]></feature>
+						<feature><![CDATA[Additional minutes: $0.45 per minute]]></feature>
+						<feature><![CDATA[Messages: Not available. If desired, please review other more cost effective Plans (e.g., Even More for Family Unlimited Talk + Unlimited Text)]]></feature>
+						<feature><![CDATA[Web Access: Unlimited with your selected Data Allowance at up to 4G speeds on capable devices]]></feature>
+						<feature><![CDATA[Free domestic long distance and no digital roaming charges across the US]]></feature>
+						</fam2000>
+						
+						<fam2000Other header="Other Items">
+						<feature><![CDATA[Credit approval required]]></feature>
+						<feature><![CDATA[Minimum contract term: 2-year]]></feature>
+						<feature><![CDATA[Activation fee: $35 per line]]></feature>
+						<feature><![CDATA[Early termination fee: Up to $200 per line]]></feature>
+						</fam2000Other>
+						
+						<fam2000Cancel header="Cancellation">
+						<feature><![CDATA[If you are not satisfied with our service, you may cancel within 14 days of activation (or longer, depending on different states) with no early cancellation fee.]]>
+						</feature>
+						</fam2000Cancel>
+									
+						<famUL header="Family Unlimited" 
+						infoHeader="Rate Plan Features">
+						<feature><![CDATA[Whenever minutes: Unlimited]]></feature>
+						<feature><![CDATA[Weekend minutes: Unlimited]]></feature>
+						<feature><![CDATA[Weeknight minutes: Unlimited]]></feature>
+						<feature><![CDATA[T-Mobile to T-Mobile minutes: Unlimited]]></feature>
+						<feature><![CDATA[Shared minutes: Unlimited]]></feature>
+						<feature><![CDATA[Additional minutes: N/A]]></feature>
+						<feature><![CDATA[Messages: Unlimited (text, picture, and video)]]></feature>
+						<feature><![CDATA[Web Access: Unlimited with your selected Data Allowance at up to 4G speeds on capable devices]]></feature>
+						<feature><![CDATA[Free domestic long distance and no digital roaming charges across the US]]></feature>
+						</famUL>
+						
+						<famULOther header="Other Items">
+						<feature><![CDATA[Credit approval required]]></feature>
+						<feature><![CDATA[Minimum contract term: 2-year]]></feature>
+						<feature><![CDATA[Activation fee: $35 per line]]></feature>
+						<feature><![CDATA[Early termination fee: Up to $200 per line]]></feature>
+						</famULOther>
+						
+						<famULCancel header="Cancellation">
+						<feature><![CDATA[If you are not satisfied with our service, you may cancel within 14 days of activation (or longer, depending on different states) with no early cancellation fee.]]>
+						</feature>
+						</famULCancel>
+						
+							<dpUL
+						infoHeader="Rate Plan Info"
+						dis="*$10.00 (Overage of $0.10/MB; Maximum Overage $30)
+There is an overage charge of $0.10/MB with a maximum overage of $30 per month (maximum fee in a month cannot exceed $40 - $10 for the MRC plus $30 Overage). If the customer usage exceeds 5 GB, speed will be automatically reduced for the remainder of the billing period.">
+						<feature><![CDATA[Unlimited Data in 200 MB, 2 GB, 5 GB, and 10 GB high-speed options allow you to pick a data package that meets your needs and budget without worrying about overage fees. If you reach your allotted high-speed data amount for the month, you can still enjoy unlimited data connection at a reduced speed.*]]></feature>
+						</dpUL>
+						
+							
+						<option header="Additional Options">
+						<item>
+						<feature><![CDATA[HotSpot]]>
+						</feature>
+						<price><![CDATA[$9.99]]>
+						</price>
+						<info><![CDATA[Stay connected get Wi-Fi access on your laptop, phone, and select cameras and gaming devices at places you already go, including Starbucks, Borders Books and Music stores, airports such as DFW, LAX and SFO, Barnes & Noble bookstores and many more.
+]]>
+</info>
+</item>
+<item>
+<feature><![CDATA[International Discounted Calling]]></feature>
+<price><![CDATA[$5.00]]></price>
+<info><![CDATA[OneWorld ILD
+]]>
+<![CDATA[Get great discounted rates on international calls made from your mobile phone. Additional credit approval required.
+]]>
+</info>
+</item>
+
+<item>
+<feature><![CDATA[WorldClass International Service]]></feature>
+<price><![CDATA[Free]]></price>
+<info><![CDATA[OneWorld ILD
+]]>
+<![CDATA[WorldClass Roaming
+]]>			
+<![CDATA[Small rates for a big world. Expand your horizons when calling from outside the US, with no monthly fee. Dual- or tri-band phones required, unless calling from Mexico. Additional credit approval required.
+]]>
+</info>
+</item>
+
+
+<item>
+<feature><![CDATA[Mas Mexico: Unlimited texting and discounted calling to Mexico]]></feature>
+<price><![CDATA[$5.00]]></price>
+<info><![CDATA[OneWorld ILD
+]]>
+<![CDATA[International Services
+]]>
+<![CDATA[Stay in touch with friends and family in Mexico- for a great low price. Send unlimited text messages to Mexico, plus get discounted calling rates of $.05 per minute (to landline phones) or $.25 per minute (to cell phones).
+]]>
+<![CDATA[Limited-time offer, subject to change. Taxes and fees additional. Qualifying post-paid plan with unlimited domestic messaging required. Calls and text messages must originate in the US. Unlimited features are for direct communications between two people. Credit approval may be required.
+]]>
+</info>
+</item>
+
+
+<item>
+<feature><![CDATA[Visual Voicemail]]></feature>
+<price><![CDATA[Free]]></price>				
+<info><![CDATA[Visual Voicemail makes managing your voice messages even easier than before. Visual Voicemail allows you to:
+]]>
+<![CDATA[Play and replay messages in any order
+]]>
+<![CDATA[Save voice messages to your phone
+]]>
+<![CDATA[Choose how you want to respond to messages
+]]>
+<![CDATA[Share special audio messages via e-mail
+]]>
+<![CDATA[Create personalized greetings
+]]></info>
+</item>
+</option>
+</details>
+<terms x="6" y="472" link="http://www.t-mobile.com/Templates/Popup.aspx?PAsset=Ftr_Ftr_TermsAndConditions&amp;print=true">
+<![CDATA[For full terms and conditions of service, please visit www.att.com/wirelessterms]]></terms>
+</plan>
+
+
+
+		
+		<plan id="vDC" logo="logo_verizon.jpg"
+		calLink="http://www.verizonwireless.com/splash_includes/datacalculator.html"
+		buyLink="http://www.dell.com/us/p/laptops.aspx?c=us&amp;cs=19&amp;l=en&amp;s=dhs&amp;~ck=mn">
+			<intro>
+				<titleCopy><![CDATA[Access the web on your notebook with a Verizon data plan and gain access to the world’s largest 4G network.]]></titleCopy>
+				<planName><![CDATA[MBB Data Contract]]></planName>
+			<bullet1><![CDATA[2 year contract term]]></bullet1>
+			<dataIntro><![CDATA[Data plans allow you to have access to 3G/4G Internet almost anywhere you go on your tablet or mobile broadband laptop. Contract data plans are two-year service commitments that allow you to pay monthly for your data, just like you would for your cell phone service. Pick a plan that fits best with your needs, and enjoy upfront discounts on the purchase price of most devices for activating a new 2-year contract.]]></dataIntro>
+			<calText calColor="0xee3e33"><![CDATA[Access the Verizon Data Calculator to estimate your data usage.]]></calText>	
+			</intro>
+			<planGraph x="490" y="120">
+				<barHeader><![CDATA[Mobile Broadband]]></barHeader>
+				<barNumber1><![CDATA[ 5 GB]]></barNumber1>
+				<barSub1><![CDATA[ ]]></barSub1>
+				<barNumber2><![CDATA[ 10 GB]]></barNumber2>
+				<barSub2><![CDATA[ ]]></barSub2>
+				<barColor text="0xee3e33" gap="25" width="190" sGrad="0xee3e33" eGrad="0x84201a"/>
+				<bar1 height="200" bul1="5 GB per month" bul2="$10 Per GB Rate After Allowance" bul3="2 year contract term" dollars="50" cents="00"/>
+				<bar2 height="300" bul1="10 GB per month" bul2="No annual contract" bul3="Nationwide high speed network" dollars="80" cents="00" />
+				</planGraph>
+			<terms x="6" y="472" link="http://www.verizonwireless.com/b2c/globalText?textName=CUSTOMER_AGREEMENT&amp;jspName=footer/customerAgreement.jsp">
+				<![CDATA[View the Verizon Wireless Customer Agreement here.]]></terms>
+		</plan>
+		
+		
+		<plan id="vDS" logo="logo_verizon.jpg"
+		calLink="http://www.verizonwireless.com/splash_includes/datacalculator.html"
+		buyLink="http://www.dell.com/us/p/laptops.aspx?c=us&amp;cs=19&amp;l=en&amp;s=dhs&amp;~ck=mn">
+			<intro>
+				<titleCopy><![CDATA[Access the web on your notebook with a Verizon data plan and gain access to the world’s largest 4G network.]]></titleCopy>
+				<planName><![CDATA[Prepaid Data Plans]]></planName>
+				<dataIntro><![CDATA[Pay for only what you need when you need it. Purchase a Dell laptop with a Verizon mobile broadband card built in, without the commitment of a contract. Then simply click on the Dell Mobile Broadband Card Utility icon on your laptop whenever you need high-speed Internet on the go, select the pass that fits your needs, submit your payment, and your card is immediately activated and ready for use! It's the simple, no-contract way to get mobile Internet from Verizon's 3G/4G network when you need it most.]]>
+				</dataIntro>
+			<calText calColor="0xee3e33">
+			<![CDATA[Access the Verizon Data Calculator to estimate your data usage.]]>
+			</calText>	
+			</intro>
+			<planGraph x="160" y="120">
+				<barHeader><![CDATA[ ]]></barHeader>
+				<barSub1><![CDATA[Day Pass]]></barSub1>
+				<barNumber1><![CDATA[ 100 MB]]></barNumber1>
+				<barSub2><![CDATA[Week Pass]]></barSub2>
+				<barNumber2><![CDATA[ 300 MB ]]></barNumber2>
+				<barSub3><![CDATA[Month Pass]]></barSub3>
+				<barNumber3><![CDATA[ 1 GB]]></barNumber3>
+				<barSub4><![CDATA[Month Pass]]></barSub4>
+				<barNumber4><![CDATA[ 5 GB]]></barNumber4>
+
+			<barColor text="0xee3e33" gap="20" 
+			width="160" sGrad="0xee3e33" eGrad="0x84201a"/>
+				<bar1 height="90"
+				bul1="100 MB per month" dollars="15" cents="00"/>
+				<bar2 height="140" 
+				bul1="300 MB per month" dollars="30" cents="00"/>
+				<bar3 height="190"
+				bul1="1 GB per month" dollars="50" cents="00"/>
+				<bar4 height="240" bul1="5 GB per month"
+				dollars="80" cents="00"/> 
+			</planGraph>
+			<terms x="6" y="472" link="http://www.verizonwireless.com/b2c/globalText?textName=CUSTOMER_AGREEMENT&amp;jspName=footer/customerAgreement.jsp">
+				<![CDATA[View the Verizon Wireless Customer Agreement here.]]></terms>
+		</plan>	
+	
+	
+	
+	
+	
+	
+		<plan id="sDC" logo="logo_sprint.jpg" 
+		calLink="http://shop.sprint.com/mysprint/shop/plan/plan_wall.jsp?INTNAV=WWW:HE:Plans"
+		buyLink="http://www.dell.com/us/p/sprint-mobile-broadband.aspx?~ck=mn">
+			<intro>
+				<titleCopy><![CDATA[Get instant Internet access on you rmobile broadband device wherever you go with the Sprint 3G network]]></titleCopy>
+				<planName><![CDATA[Data Contract]]></planName>
+				<introCopy><![CDATA[Get instant Internet access on you rmobile broadband device wherever you go with the Sprint 3G network]]></introCopy>
+				<dataIntro><![CDATA[Data plans allow you to have access to 3G/4G Internet almost anywhere you go on your tablet or mobile broadband laptop. Contract data plans are two-year service commitments that allow you to pay monthly for your data, just like you would for your cell phone service. Pick a plan that fits best with your needs, and enjoy upfront discounts on the purchase price of most devices for activating a new 2-year contract.]]></dataIntro>
+			<calText calColor="0x666666"><![CDATA[Access the T-Mobile Data Calculator to estimate your data usage.]]></calText>	
+			</intro>
+			<planGraph x="725" y="120">
+				<barHeader><![CDATA[3G Mobile Broadband]]></barHeader>
+				<barNumber1><![CDATA[]]></barNumber1>
+				<barSub1><![CDATA[]]></barSub1>
+			
+				<barColor text="0x666666" gap="30" width="160" sGrad="0xf0dd2e" eGrad="0xead40a"/>
+				<bar1 height="300" bul1="5 MB per month" bul2="$0.25 per extra 1 MB off-network (after exceeding 300MB off-network allowance)"
+				  bul3="2 year contract term" dollars="59" cents="99"/>
+			</planGraph>
+			<terms x="3" y="460" link="http://www.sprint.com/legal/agreement.html?INTNAV=ATG:FT:Terms">
+				<![CDATA[View the Sprint Customer Agreement here.]]></terms>
+		</plan>
+		
+		
+		
+
+		<plan id="aDC" logo="logo_ATT.gif"
+		calLink="http://www.att.com/datacalculator"
+		buyLink="http://www.dell.com/us/p/att-mobile-broadband.aspx?~ck=mn">
+			<intro>
+				<titleCopy><![CDATA[AT&T DataConnect lets you send and receive email, and browse the Internet from virtually anywhere.]]></titleCopy>
+				<planName><![CDATA[Data Contract]]></planName>
+				<dataIntro><![CDATA[Data plans allow you to have access to 3G/4G Internet almost anywhere you go on your tablet or mobile broadband laptop. Contract data plans are two-year service commitments that allow you to pay monthly for your data, just like you would for your cell phone service. Pick a plan that fits best with your needs, and enjoy upfront discounts on the purchase price of most devices for activating a new 2-year contract.
+
+Limited Time Offer: Offer requires two year service commitment and $60 a month DataConnect 5GB plan.  If you exceed your monthly data allowance an overage rate of $.05 per MB applies.  Subscriber must live & have a mailing addr. within AT&T’s owned wireless network coverage area.  Up to $36 activ. fee applies. Early termination fee: None if cancelled in the first 30 days, but up to $35 restocking fee may apply to equipment returns; thereafter up to $325.  Coverage not available in all areas.  Other restrictions apply.
+				]]>
+				</dataIntro>
+				<calText calColor="0x0085c3">
+				<![CDATA[Access the AT&T Data Calculator to estimate your data usage.]]></calText>
+		</intro>
+			<planGraph x="725" y="120">
+				<barHeader><![CDATA[Data Connect]]></barHeader>
+				<barNumber1><![CDATA[ 5GB]]></barNumber1>
+				<barSub1><![CDATA[ ]]></barSub1>
+				<barColor text="0x0085c3" gap="30" 
+			width="160" sGrad="0x007fbb" eGrad="0x091F2A"/>
+				<bar1 bul1="5 GB per month" bul2="$.05 per MB overage fee"
+				 height="300" dollars="60" cents="00"/>
+			</planGraph>
+			
+			<terms x="6" y="472" link="http://www.att.com/termsofservice">
+				<![CDATA[View the AT&T Customer Agreement here.]]></terms>
+		</plan>
+
+
+
+		<plan id="aDS" logo="logo_ATT.gif"
+		calLink="http://www.att.com/datacalculator"
+		buyLink="http://www.dell.com/us/p/att-mobile-broadband.aspx?~ck=mn">
+			<intro>
+				<titleCopy><![CDATA[AT&T DataConnect lets you send and receive email, and browse the Internet from virtually anywhere.]]></titleCopy>
+				<planName><![CDATA[Prepaid Data Plans]]></planName>
+				<dataIntro><![CDATA[Now you can travel the nation with your laptop and browse on your terms. AT&T DataConnect Pass is the perfect solution for purchasing data capability for your laptop on an "as needed" basis.  AT&T DataConnect Pass is available for use on the AT&T network in the US. Each data session is valid for a specific timeframe or until you've reached your data limit. Sessions can be purchased as needed online, 24 hours a day, 7 days a week at att.com/buyasession.]]></dataIntro>
+			<calText calColor="0x0085c3"><![CDATA[Access the AT&T Data Calculator to estimate your data usage.]]></calText>
+			</intro>
+			<planGraph x="430" y="130">
+			
+			<barHeader><![CDATA[DataConnect]]></barHeader>
+					<barNumber1><![CDATA[ 100 MB]]></barNumber1>
+					<barSub1><![CDATA[Day Pass]]></barSub1>
+					<barNumber2><![CDATA[ 300 MB]]></barNumber2>
+					<barSub2><![CDATA[Week Pass]]></barSub2>
+					<barNumber3><![CDATA[ 1 GB]]></barNumber3>
+					<barSub3><![CDATA[Month Pass]]></barSub3>
+					<barColor text="0x0085c3" gap="20" 
+			width="140" sGrad="0x007fbb" eGrad="0x091F2A"/>
+					<bar1 bul1="100 MB per month" height="150" dollars="15" cents="00"/>
+					<bar2 bul1="300 MB per month" height="220" dollars="30" cents="00"/>
+					<bar3 bul1="1 GB per month" height="290" dollars="50" cents="00"/>
+			</planGraph>
+					
+			
+			<details>
+			<option header="Additional Options">	
+			<item>
+	<![CDATA[In the U.S., DataConnect Pass Session-Based Plans can only be used on AT&T’s wireless network. Requires laptop or netbook with aircard/connect card capable of working on AT&T’s wireless network, internet access, and a new SIM card. Time begins expiring immediately upon activation, whether you are using the service or not. Once your time expires or the allotted data is used, whichever comes first, your data access will cease. International use is limited to certain countries and carriers, listed at att.com/dataconnectglobal. Availability, quality of coverage and international data services while roaming not guaranteed. Except for CRU postpaid DataConnect customers, after the International Session-Based Plan has expired/been consumed, you will no longer be able to access wireless international data services when traveling outside the U.S., Puerto Rico or the USVI. Fees are non-refundable. Other restrictions apply. For complete terms and conditions, see DataConnect Pass/iPad™/Session-Based Wireless Data Services Agreement on www.att.com/wirelesslegal. © 2011 AT&T Intellectual Property. All rights reserved. AT&T and the AT&T logo are trademarks of AT&T Intellectual Property.]]>
+</item></option></details>
+			<terms x="6" y="472" link="http://www.att.com/termsofservice">
+				<![CDATA[View the AT&T Customer Agreement here.]]></terms>
+		</plan>
+		
+<!--WIFI*************************************-->
+<wifi logo="wifi_large.jpg" 
+buyLink="http://www.dell.com/us/p/mobile-streak-7/pd">
+			<title><![CDATA[WiFi]]></title>
+			<intro><![CDATA[WiFi-only devices allow you to connect to the Internet using any available local network around you. Whether at your home, office, or favorite hotspot*, if you have access to a wireless Internet network, then you can work and play  without the cost and commitment of a data contract.]]></intro>
+			<copy><![CDATA[*What is a WiFi hotspot? A hotspot is a specific area that offers Internet access for a tablet or laptop using a WiFi wireless signal. Hotspots are often found at restaurants, airports, hotels, coffee shops and other public places.]]></copy>
+		</wifi>
+
+		
+<!--UNLOCKED*************************************-->		
+		<un logo="unlocked_large.jpg" vpurl="http://www.dell.com/us/p/mobile-venue-pro/pd?~ck=mn" vurl="http://www.dell.com/us/p/mobile-venue/pd?~ck=mn"> 
+			<title><![CDATA[Unlocked]]></title>
+			<intro><![CDATA["Unlocked" refers to phones manufactured without software that "locks" a customer to a specific carrier's network.  Unlocked phones offer the flexibility of use with different carriers, provided the phone supports the frequencies of the carrier. Unlocked phones are typically sold without a carrier contract and thus do not include an activation discount on the purchase price. To activate an unlocked phone, simply visit your local carrier store after purchase on Dell.com. ]]></intro>
+			<copy><![CDATA[Learn more about unlocked phones and compatible frequencies >]]></copy>
+			<scroll><![CDATA[Subject to a phone maker’s product strategy and/or any agreements with carriers – “unlocked” versions of products may also be available. These devices have no mechanisms to prohibit SIM cards from other carriers. An “unlocked” device’s ability to support all services offered by other carriers is, of course, subject to the device’s hardware and software capabilities, such as supported frequency bands, software applications, etc. For devices with high speed mobile data capabilities like the Dell Venue, it is especially important to consider the device's compatible 3G bands.
+
+Due to government regulations, the scarce availability of radio spectrum, and carrier business choices, modern mobile devices need to support a number of radio frequencies. A given carrier, such as AT&T, T-Mobile, and others, often has multiple radio bands operating in their network, and different services can be available on different bands within the same network. The ideal mobile device would support all radio frequencies possible at the same time, but due to chipset and antenna limitations, this is currently not possible. Therefore, a given version of hardware typically does not support all services on all networks.
+
+In addition, network technologies evolve through generations, such as “2G”, “3G” and “4G”. Each generation brings a new set of capabilities, such as faster data rates, and requires the deployment of new network equipment to support those services. Therefore, a given frequency band may be used for one or more of the services.
+
+Most premium mobile phones on the market today, including all Dell phones, support four frequency bands for 2G – 850/900/1800/1900 MHz. This provides nearly global coverage. Japan and Korea are notable exceptions as they don’t have 2G GSM networks. For 3G, 2100 MHz is nearly globally accepted except for the U.S. 3G in the U.S. is divided by carrier (ATT – 850/1900 MHz, T-Mobile – 1700 MHz). In some countries additional frequencies are available to improve network capacity.
+
+Let’s take the Dell Venue Smartphone as a specific example. Venue has two base product versions from the frequency band support perspective:
+
+1.Version One has the following:
+
+2G support: 850/900/1800/1900 MHz (GSM/GPRS/EDGE)
+3G support (WCDMA): 850/1900/2100
+This version supports quad-band 2G and 2100 3G, therefore it has largely global capability in either 2G or 3G. It also supports the 850/1900 MHZ bands required by AT&T in the US. This version would be recommended for consumers with AT&T service.
+
+
+2.Version Two has the following:
+
+2G support: 850/900/1800/1900 MHz (GSM/GPRS/EDGE)
+3G support (WCDMA): 900/1700/2100 (1700 is also known as the AWS band)
+This version also supports quad-band 2G and 2100 3G, therefore it has largely global capability in either 2G or 3G. It also supports the 1700 MHZ bands required by T-Mobile in the US. This version would be recommended for consumers with T-Mobile service.
+
+
+Note: The specific services any user gets with these devices will depend on their service plan and the network capabilities in each country. Users must contact their carrier to be certain precisely what frequency bands are used for a given country and carrier. Verizon, Sprint, and others use a different set of 2G/3G radio technologies than those for AT&T, T-Mobile, and most of the rest of the world. These are not covered here.
+]]>
+</scroll>
+		</un>
+	<homeImg src="homeImg.jpg" />
+		<chatLink link="http://chat1.us.dell.com/netagent/cimlogin.aspx?questid=4DD9CD1F-D0C9-49DB-BB0E-C8F554BDCC60&amp;portid=1F874336-BA34-4D77-B132-1973E3A10BD0"/>
+</content>
