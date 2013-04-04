@@ -1,17 +1,6 @@
-/**************************************************
-@TODO
-When the page is resized, the dotted border lines begin to creep in on the circle. add a media query to deal with that
-media query for global month navigation
-***************************************************/
 @import "compass/reset";
 @import "compass";
 @import "_logic";
-// $midline-clr: #111116;
-// $secondary-shading: #4E547B;
-// $circle-face-clr: #3D4055;
-// $container-subhead-clr: #1A1B21;
-// $container-border-clr: #A4A6B5;
-
 
 body {
   background: url(../img/p5.png);
@@ -274,8 +263,55 @@ h2.ss-subtitle {
 
 $circles: ss-circle !default;
 
-@for $i from 1 through 30 {
+@for $i from 1 through 57 {
   .#{$circles}-#{$i} {
     background-image: url(../img/#{$i}.jpg);
   }
 }
+
+
+#back-top {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  a {
+    width: 50px;
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bbb;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s;
+    /* transition */
+    &:hover {
+      color: #000;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        transition: .5s;
+      span {
+        background-color: #777;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        transition: .5s;
+      }
+    }
+  }
+  /* arrow icon (span tag) */
+  span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-bottom: 7px;
+    background: rgba(#000, 0.2) url(../img/up-arrow.png) no-repeat center center;
+    border-radius: 4px;
+
+    /* transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+  }
+}
+
